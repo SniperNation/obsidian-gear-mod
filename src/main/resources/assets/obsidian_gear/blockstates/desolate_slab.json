@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "obsidian_gear:block/desolate_slab"
+    },
+    "type=top": {
+      "model": "obsidian_gear:block/desolate_slab_top"
+    },
+    "type=double": {
+      "model": "obsidian_gear:block/desolate_slab_full"
+    }
+  }
+}

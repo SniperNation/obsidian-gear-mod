@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "obsidian_gear:blocks/desolate_planks",
+    "top": "obsidian_gear:blocks/desolate_planks",
+    "side": "obsidian_gear:blocks/desolate_planks"
+  }
+}

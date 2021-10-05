@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "obsidian_gear:blocks/desolate_leaves",
+    "particle": "obsidian_gear:blocks/desolate_leaves"
+  }
+}

@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="obsidian_gear"
+version="beta-0.8.1"
+displayName="Obsidian Gear"
+credits="Created by SniperNation317 (thesnipercitation#9118 is the discord)"
+displayURL="https://mcreator.net"
+authors="SniperNation317"
+description='''
+Add obsidian gear like armor, tools and weapons as well as custom enchantments, biomes and blocks to your game!
+'''
+
+[[dependencies.obsidian_gear]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
