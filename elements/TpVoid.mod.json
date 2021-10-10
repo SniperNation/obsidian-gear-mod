@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "command",
+  "definition": {
+    "commandName": "tpvoid",
+    "permissionLevel": "4",
+    "onCommandExecuted": {
+      "name": "TpVoidCommandExecuted"
+    }
+  }
+}

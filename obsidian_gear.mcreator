@@ -881,6 +881,119 @@
       "metadata": {
         "gb": true
       }
+    },
+    {
+      "name": "PoisonTouch",
+      "type": "enchantment",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poison_touch"
+    },
+    {
+      "name": "TpVoidCommandExecuted",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_void_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TpVoid",
+      "type": "command",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_void"
+    },
+    {
+      "name": "TpOverworldCommandExecuted",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_overworld_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TpOverworld",
+      "type": "command",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_overworld"
+    },
+    {
+      "name": "TpNetherCommandExecuted",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_nether_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TpNether",
+      "type": "command",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_nether"
+    },
+    {
+      "name": "TpEndCommandExecuted",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_end_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TpEnd",
+      "type": "command",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_end"
     }
   ],
   "variable_elements": [],
@@ -893,6 +1006,7 @@
       "item.obsidian_gear.obsidian_pickaxe": "Obsidian Pickaxe",
       "advancements.the_void_entered.title": "Wow, Such Empty",
       "item.obsidian_gear.voidium_pickaxe": "Voidium Pickaxe",
+      "enchantment.obsidian_gear.poison_touch": "Poison Touch",
       "biome.obsidian_gear.towering_peaks": "Towering Peaks",
       "item.obsidian_gear.kyrite_sword": "Kyrite Sword",
       "item.obsidian_gear.voidium_armor_helmet": "Voidium Helmet",
