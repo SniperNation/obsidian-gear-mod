@@ -4,6 +4,11 @@
 
 package net.mcreator.obsidiangear.item;
 
+import net.minecraft.world.World;
+import java.util.Map;
+import net.mcreator.obsidiangear.procedures.ImbuedProcedure;
+import java.util.HashMap;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.IItemProvider;
@@ -53,7 +58,20 @@ public class VoidiumAxeItem extends ObsidianGearModElements.ModElement
                 public Ingredient func_200924_f() {
                     return Ingredient.func_193369_a(new ItemStack[] { new ItemStack((IItemProvider)VoidiumIngotItem.block) });
                 }
-            }, 1.0f, -3.0f, new Item.Properties().func_200916_a(ItemGroup.field_78040_i)) {};
+            }, 1.0f, -3.0f, new Item.Properties().func_200916_a(ItemGroup.field_78040_i)) {
+                public boolean func_77644_a(final ItemStack itemstack, final LivingEntity entity, final LivingEntity sourceentity) {
+                    final boolean retval = super.func_77644_a(itemstack, entity, sourceentity);
+                    final double x = entity.func_226277_ct_();
+                    final double y = entity.func_226278_cu_();
+                    final double z = entity.func_226281_cx_();
+                    final World world = entity.field_70170_p;
+                    final Map $_dependencies = new HashMap();
+                    $_dependencies.put("entity", entity);
+                    $_dependencies.put("itemstack", itemstack);
+                    ImbuedProcedure.executeProcedure($_dependencies);
+                    return retval;
+                }
+            };
             return (Item)axeItem.setRegistryName("voidium_axe");
         });
     }

@@ -37,7 +37,7 @@ public class PoisonTouchEnchantment extends ObsidianGearModElements.ModElement
     public static class CustomEnchantment extends Enchantment
     {
         public CustomEnchantment(final EquipmentSlotType... slots) {
-            super(Enchantment.Rarity.COMMON, EnchantmentType.BREAKABLE, slots);
+            super(Enchantment.Rarity.VERY_RARE, EnchantmentType.BREAKABLE, slots);
         }
         
         public int func_77319_d() {
@@ -45,11 +45,11 @@ public class PoisonTouchEnchantment extends ObsidianGearModElements.ModElement
         }
         
         public int func_77325_b() {
-            return 1;
+            return 3;
         }
         
         public boolean func_185261_e() {
-            return true;
+            return false;
         }
         
         public boolean func_190936_d() {
