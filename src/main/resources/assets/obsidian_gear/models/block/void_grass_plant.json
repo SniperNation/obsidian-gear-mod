@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "obsidian_gear:blocks/void_grass_plant",
-    "particle": "obsidian_gear:blocks/void_grass_plant"
-  }
-}

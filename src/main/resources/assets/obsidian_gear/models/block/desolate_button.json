@@ -1,6 +1,0 @@
-{
-  "parent": "block/button",
-  "textures": {
-    "texture": "obsidian_gear:blocks/desolate_planks"
-  }
-}

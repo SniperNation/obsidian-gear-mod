@@ -1,7 +1,0 @@
-{
-  "parent": "block/fence_inventory",
-  "textures": {
-    "texture": "obsidian_gear:blocks/desolate_planks",
-    "particle": "obsidian_gear:blocks/desolate_planks"
-  }
-}

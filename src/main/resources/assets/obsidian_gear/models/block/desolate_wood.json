@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "obsidian_gear:blocks/desolate_log_side",
-    "particle": "obsidian_gear:blocks/desolate_log_side"
-  }
-}

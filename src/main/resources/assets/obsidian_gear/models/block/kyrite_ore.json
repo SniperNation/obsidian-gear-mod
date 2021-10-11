@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "obsidian_gear:blocks/kyrite_ore",
-    "particle": "obsidian_gear:blocks/kyrite_ore"
-  }
-}
