@@ -14,3 +14,8 @@ Snapshot builds can be compiled from the <b><a href="https://github.com/SniperNa
 ### For developers
 
 You can contribute by directly commiting or forking the repository.
+
+## Roadmap
+
+In the future I plan on making an installer for all my projects, so stay tuned for that. If you would like to help me with any of my projects, please contact me on discord with the username: thesnipercitation#9118
+If you do decide to contribute or help, I would like to say thank you :)
