@@ -1,0 +1,42 @@
+{
+  "group": "obsidian_gear",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "obsidian_gear:kyrite"
+    },
+    "1": {
+      "item": "obsidian_gear:kyrite"
+    },
+    "2": {
+      "item": "obsidian_gear:kyrite"
+    },
+    "3": {
+      "item": "obsidian_gear:kyrite"
+    },
+    "4": {
+      "item": "obsidian_gear:kyrite"
+    },
+    "5": {
+      "item": "obsidian_gear:kyrite"
+    },
+    "6": {
+      "item": "obsidian_gear:kyrite"
+    },
+    "7": {
+      "item": "obsidian_gear:kyrite"
+    },
+    "8": {
+      "item": "obsidian_gear:kyrite"
+    }
+  },
+  "result": {
+    "item": "obsidian_gear:kyrite_block",
+    "count": 1
+  }
+}

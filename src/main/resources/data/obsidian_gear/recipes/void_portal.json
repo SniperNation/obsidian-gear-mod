@@ -1,0 +1,19 @@
+{
+  "group": "obsidian_gear",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "1": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "obsidian_gear:void_portal_frame",
+    "count": 1
+  }
+}

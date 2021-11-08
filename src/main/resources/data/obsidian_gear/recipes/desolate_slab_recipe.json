@@ -1,0 +1,22 @@
+{
+  "group": "obsidian_gear",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "obsidian_gear:desolate_planks"
+    },
+    "1": {
+      "item": "obsidian_gear:desolate_planks"
+    },
+    "2": {
+      "item": "obsidian_gear:desolate_planks"
+    }
+  },
+  "result": {
+    "item": "obsidian_gear:desolate_slab",
+    "count": 6
+  }
+}
