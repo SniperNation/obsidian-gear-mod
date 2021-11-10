@@ -18,7 +18,7 @@ If you want to compile the mod yourself (perhaps to build cutting edge versions)
 
 First, clone the repo by running:
   ```
-  git@github.com:SniperNation/obsidian-gear-mod.git
+  git clone git@github.com:SniperNation/obsidian-gear-mod.git
   ```
 Then, go into the main branch:
   ```
