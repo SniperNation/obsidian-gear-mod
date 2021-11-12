@@ -26,7 +26,7 @@ Then, go into the main branch:
   ```
 Finally, build the mod:
   ```
-  gradle build
+  gradlew build
   ```
 
 ### For developers
@@ -37,3 +37,6 @@ You can contribute by directly commiting or forking the repository.
 
 In the future I plan on making an installer for all my projects, so stay tuned for that. If you would like to help me with any of my projects, please contact me on discord with the username: thesnipercitation#9118
 If you do decide to contribute or help, I would like to say thank you :)
+
+## Credits
+Thanks to MSTechSupport01! He helps me maintain documentation while I work on the actual mod.
