@@ -28,10 +28,12 @@
       "value": "MISC"
     },
     "emptySound": {
-      "value": ""
+      "value": "block.water.ambient"
     },
     "rarity": "UNCOMMON",
-    "specialInfo": [],
+    "specialInfo": [
+      "Poisons you if you step in it!"
+    ],
     "resistance": 100.0,
     "luminance": 0,
     "lightOpacity": 0,

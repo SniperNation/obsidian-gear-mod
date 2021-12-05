@@ -994,6 +994,45 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tp_end"
+    },
+    {
+      "name": "Imbued",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "imbued",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AeonForge",
+      "type": "gui",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aeon_forge"
+    },
+    {
+      "name": "AeonForgeBlock",
+      "type": "block",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aeon_forge_block"
     }
   ],
   "variable_elements": [],
@@ -1055,7 +1094,8 @@
       "item.obsidian_gear.kyrite": "Kyrite",
       "block.obsidian_gear.desolate_slab": "Desolate Slab",
       "enchantment.obsidian_gear.lifesteal": "Lifesteal",
-      "block.obsidian_gear.poison_water": "Poison Water"
+      "block.obsidian_gear.poison_water": "Poison Water",
+      "block.obsidian_gear.aeon_forge_block": "Aeon Forge"
     }
   },
   "foldersRoot": {
@@ -1065,13 +1105,14 @@
   "workspaceSettings": {
     "modid": "obsidian_gear",
     "modName": "Obsidian Gear",
-    "version": "beta-0.8.1",
+    "version": "v0.8-beta.9",
     "description": "Add obsidian gear like armor, tools and weapons as well as custom enchantments, biomes and blocks to your game!",
     "author": "SniperNation317",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://github.com/SniperNation/obsidian-gear-mod",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "void_grass_plant",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

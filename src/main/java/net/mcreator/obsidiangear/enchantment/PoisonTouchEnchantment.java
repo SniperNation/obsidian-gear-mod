@@ -23,7 +23,7 @@ public class PoisonTouchEnchantment extends ObsidianGearModElements.ModElement {
 	}
 	public static class CustomEnchantment extends Enchantment {
 		public CustomEnchantment(EquipmentSlotType... slots) {
-			super(Enchantment.Rarity.COMMON, EnchantmentType.BREAKABLE, slots);
+			super(Enchantment.Rarity.VERY_RARE, EnchantmentType.BREAKABLE, slots);
 		}
 
 		@Override
@@ -38,7 +38,7 @@ public class PoisonTouchEnchantment extends ObsidianGearModElements.ModElement {
 
 		@Override
 		public boolean isTreasureEnchantment() {
-			return true;
+			return false;
 		}
 
 		@Override
