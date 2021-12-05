@@ -173,9 +173,15 @@ public class AeonForgeGui extends ObsidianGearModElements.ModElement {
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
+<<<<<<< HEAD
 					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 23 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
 				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 23 + 142));
+=======
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 17 + 84 + si * 18));
+			for (si = 0; si < 9; ++si)
+				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 17 + 142));
+>>>>>>> branch 'main' of https://github.com/SniperNation/obsidian-gear-mod
 		}
 
 		public Map<Integer, Slot> get() {

@@ -6,7 +6,11 @@
     "width": 176,
     "height": 188,
     "inventoryOffsetX": 0,
+<<<<<<< HEAD
     "inventoryOffsetY": 12,
+=======
+    "inventoryOffsetY": 6,
+>>>>>>> branch 'main' of https://github.com/SniperNation/obsidian-gear-mod
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [

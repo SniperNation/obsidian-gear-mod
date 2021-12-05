@@ -1,10 +1,42 @@
 # obsidian-gear-mod
 
-Obsidian Gear (or ObG for short) adds new items, blocks, liquids and dimensions to your game. The recipes for the items and blocks can be found at https://imgur.com/a/N62zrhI.
-All the recipes that are not included there (eg Kyrite or Voidium) all work exactly like vanilla (ie the Kyrite Sword recipe is the same as a vanilla sword.
+Hey! This mod adds a buncha stuff like enchantments, dimensions, biomes, blocks, items, advancements, and more! Download it from the <b><a href="https://github.com/SniperNation/obsidian-gear-mod/releases">Releases</a></b> section :)
 
-Download at https://github.com/SniperNation/obsidian-gear-mod/releases. The installation/use instructions will be in the description of every release. 
+The recipes for the items that differ from vanilla can be found <b><a href="https://imgur.com/a/N62zrhI">here</a>. </b>
 
-## THIS MOD REQUIRES FORGE 1.16.5!!!
+## Use Forge 36.2.0 / 36.2.6 (1.16.5)!
 
-And don't judge me for using MCreator, OK?!
+Instructions are in Release descriptions.
+
+### Snapshot Builds
+### Update: Snapshots are depreciated and the bleeding branch will no longer be updated. 
+The bleeding branch will be kept in the repo purely for historical purposes. <br>
+Snapshot builds can be compiled from the <b><a href="https://github.com/SniperNation/obsidian-gear-mod/tree/bleeding">Bleeding</a></b> branch. Please note that these builds are not final and may contain bugs. For tested releases please see <b><a href="https://github.com/SniperNation/obsidian-gear-mod/releases">Releases</a></b>.
+
+## Compile the mod
+If you want to compile the mod yourself (perhaps to build cutting edge versions) then follow the instructions below. <br>
+
+First, clone the repo by running:
+  ```
+  git clone git@github.com:SniperNation/obsidian-gear-mod.git
+  ```
+Then, go into the main branch:
+  ```
+  git checkout main
+  ```
+Finally, build the mod:
+  ```
+  gradlew build
+  ```
+
+### For developers
+
+You can contribute by directly commiting or forking the repository.
+
+## Roadmap
+
+In the future I plan on adding more stuff to the installer. If you would like to help me with any of my projects, please contact me on discord with the username: thesnipercitation#9118
+If you do decide to contribute or help, I would like to say thank you :)
+
+## Credits
+Thanks to MSTechSupport01! He helps me maintain documentation while I work on the actual mod.
