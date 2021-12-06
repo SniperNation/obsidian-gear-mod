@@ -1017,15 +1017,6 @@
       }
     },
     {
-      "name": "AeonForge",
-      "type": "gui",
-      "sortid": 99,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aeon_forge"
-    },
-    {
       "name": "AeonForgeBlock",
       "type": "block",
       "sortid": 100,
@@ -1033,6 +1024,62 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "aeon_forge_block"
+    },
+    {
+      "name": "AeonForgeRecipe",
+      "type": "recipe",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aeon_forge_recipe"
+    },
+    {
+      "name": "AeonForgeGUI",
+      "type": "gui",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aeon_forge_gui"
+    },
+    {
+      "name": "RedIron",
+      "type": "block",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_iron"
+    },
+    {
+      "name": "EnderiumRecipeACT",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_recipe_act",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1055,6 +1102,7 @@
       "item.obsidian_gear.obsidian_boots": "Obsidian Boots",
       "item.obsidian_gear.kyrite_armor_helmet": "Kyrite Helmet",
       "advancements.the_void_entered.descr": "Enter the Void Dimension.",
+      "block.obsidian_gear.red_iron": "Red Iron",
       "item.obsidian_gear.voidium_hoe": "Voidium Hoe",
       "block.obsidian_gear.desolate_fence": "Desolate Fence",
       "block.obsidian_gear.desolate_leaves": "Desolate Leaves",

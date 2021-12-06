@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "obsidian_gear:blocks/red_iron",
+    "up": "obsidian_gear:blocks/red_iron",
+    "north": "obsidian_gear:blocks/red_iron",
+    "east": "obsidian_gear:blocks/red_iron",
+    "south": "obsidian_gear:blocks/red_iron",
+    "west": "obsidian_gear:blocks/red_iron",
+    "particle": "obsidian_gear:blocks/red_iron"
+  }
+}

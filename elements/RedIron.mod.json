@@ -2,12 +2,12 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "aeon_forge_bottom",
-    "textureTop": "aeon_forge_top",
-    "textureLeft": "aeon_forge_front",
-    "textureFront": "aeon_forge_front",
-    "textureRight": "aeon_forge_front",
-    "textureBack": "aeon_forge_front",
+    "texture": "red_iron",
+    "textureTop": "red_iron",
+    "textureLeft": "red_iron",
+    "textureFront": "red_iron",
+    "textureRight": "red_iron",
+    "textureBack": "red_iron",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -32,10 +32,8 @@
         "subtract": false
       }
     ],
-    "name": "Aeon Forge",
-    "specialInfo": [
-      "This is an advanced crafting table!"
-    ],
+    "name": "Red Iron",
+    "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -54,7 +52,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "WOOD"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -79,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -106,43 +104,15 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "hasInventory": true,
-    "guiBoundTo": "AeonForgeGUI",
-    "openGUIOnRightClick": true,
-    "inventorySize": 26,
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [
-      25
-    ],
-    "inventoryInSlotIDs": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24
-    ],
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
     "energyInitial": 0,
     "energyCapacity": 400000,
@@ -153,7 +123,11 @@
     "fluidRestrictions": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

@@ -50,7 +50,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.obsidiangear.itemgroup.ObsidianGearItemGroup;
-import net.mcreator.obsidiangear.gui.AeonForgeGui;
+import net.mcreator.obsidiangear.gui.AeonForgeGUIGui;
 import net.mcreator.obsidiangear.ObsidianGearModElements;
 
 import javax.annotation.Nullable;
@@ -127,7 +127,7 @@ public class AeonForgeBlockBlock extends ObsidianGearModElements.ModElement {
 
 					@Override
 					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-						return new AeonForgeGui.GuiContainerMod(id, inventory,
+						return new AeonForgeGUIGui.GuiContainerMod(id, inventory,
 								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
 					}
 				}, new BlockPos(x, y, z));
@@ -249,7 +249,7 @@ public class AeonForgeBlockBlock extends ObsidianGearModElements.ModElement {
 
 		@Override
 		public Container createMenu(int id, PlayerInventory player) {
-			return new AeonForgeGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
+			return new AeonForgeGUIGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
 		}
 
 		@Override

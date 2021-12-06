@@ -4,13 +4,9 @@
   "definition": {
     "type": 1,
     "width": 176,
-    "height": 188,
+    "height": 186,
     "inventoryOffsetX": 0,
-<<<<<<< HEAD
-    "inventoryOffsetY": 12,
-=======
-    "inventoryOffsetY": 6,
->>>>>>> branch 'main' of https://github.com/SniperNation/obsidian-gear-mod
+    "inventoryOffsetY": 10,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
@@ -24,8 +20,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #0",
-          "x": 148,
-          "y": 31
+          "x": 133,
+          "y": 35
         }
       },
       {
@@ -38,8 +34,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #1",
-          "x": 166,
-          "y": 31
+          "x": 151,
+          "y": 35
         }
       },
       {
@@ -52,8 +48,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #2",
-          "x": 184,
-          "y": 31
+          "x": 169,
+          "y": 35
         }
       },
       {
@@ -66,8 +62,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #3",
-          "x": 202,
-          "y": 31
+          "x": 187,
+          "y": 35
         }
       },
       {
@@ -80,8 +76,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #4",
-          "x": 220,
-          "y": 31
+          "x": 205,
+          "y": 35
         }
       },
       {
@@ -94,8 +90,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #5",
-          "x": 148,
-          "y": 49
+          "x": 133,
+          "y": 53
         }
       },
       {
@@ -108,8 +104,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #6",
-          "x": 166,
-          "y": 49
+          "x": 151,
+          "y": 53
         }
       },
       {
@@ -122,22 +118,19 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #7",
-          "x": 184,
-          "y": 49
+          "x": 169,
+          "y": 53
         }
       },
       {
-        "type": "inputslot",
+        "type": "outputslot",
         "data": {
-          "inputLimit": {
-            "value": ""
-          },
           "id": 8,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #8",
-          "x": 202,
-          "y": 49
+          "x": 187,
+          "y": 53
         }
       },
       {
@@ -150,8 +143,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #9",
-          "x": 220,
-          "y": 49
+          "x": 205,
+          "y": 53
         }
       },
       {
@@ -164,8 +157,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #10",
-          "x": 148,
-          "y": 67
+          "x": 133,
+          "y": 71
         }
       },
       {
@@ -178,8 +171,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #11",
-          "x": 166,
-          "y": 67
+          "x": 151,
+          "y": 71
         }
       },
       {
@@ -192,8 +185,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #12",
-          "x": 184,
-          "y": 67
+          "x": 169,
+          "y": 71
         }
       },
       {
@@ -206,8 +199,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #13",
-          "x": 202,
-          "y": 67
+          "x": 187,
+          "y": 71
         }
       },
       {
@@ -220,8 +213,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #14",
-          "x": 220,
-          "y": 67
+          "x": 205,
+          "y": 71
         }
       },
       {
@@ -234,8 +227,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #15",
-          "x": 148,
-          "y": 85
+          "x": 133,
+          "y": 89
         }
       },
       {
@@ -248,8 +241,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #16",
-          "x": 166,
-          "y": 85
+          "x": 151,
+          "y": 89
         }
       },
       {
@@ -262,8 +255,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #17",
-          "x": 184,
-          "y": 85
+          "x": 169,
+          "y": 89
         }
       },
       {
@@ -276,8 +269,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #18",
-          "x": 202,
-          "y": 85
+          "x": 187,
+          "y": 89
         }
       },
       {
@@ -290,8 +283,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #19",
-          "x": 220,
-          "y": 85
+          "x": 205,
+          "y": 89
         }
       },
       {
@@ -304,8 +297,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #20",
-          "x": 148,
-          "y": 103
+          "x": 133,
+          "y": 107
         }
       },
       {
@@ -318,8 +311,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #21",
-          "x": 166,
-          "y": 103
+          "x": 151,
+          "y": 107
         }
       },
       {
@@ -332,8 +325,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #22",
-          "x": 184,
-          "y": 103
+          "x": 169,
+          "y": 107
         }
       },
       {
@@ -346,8 +339,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #23",
-          "x": 202,
-          "y": 103
+          "x": 187,
+          "y": 107
         }
       },
       {
@@ -360,8 +353,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #24",
-          "x": 220,
-          "y": 103
+          "x": 205,
+          "y": 107
         }
       },
       {
@@ -370,8 +363,8 @@
           "image": "aeon_forge_gui_arrow.png",
           "use1Xscale": false,
           "name": "aeon_forge_gui_arrow.png",
-          "x": 241,
-          "y": 60
+          "x": 232,
+          "y": 64
         }
       },
       {
@@ -381,8 +374,32 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #25",
-          "x": 276,
-          "y": 67
+          "x": 272,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Craft",
+          "width": 50,
+          "height": 20,
+          "name": "Craft",
+          "x": 232,
+          "y": 106
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Aeon Forge",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Aeon Forge",
+          "x": 234,
+          "y": 35
         }
       }
     ],

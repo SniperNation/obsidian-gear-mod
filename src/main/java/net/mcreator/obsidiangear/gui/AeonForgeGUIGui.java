@@ -36,11 +36,11 @@ import java.util.Map;
 import java.util.HashMap;
 
 @ObsidianGearModElements.ModElement.Tag
-public class AeonForgeGui extends ObsidianGearModElements.ModElement {
+public class AeonForgeGUIGui extends ObsidianGearModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public AeonForgeGui(ObsidianGearModElements instance) {
-		super(instance, 99);
+	public AeonForgeGUIGui(ObsidianGearModElements instance) {
+		super(instance, 102);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -51,12 +51,12 @@ public class AeonForgeGui extends ObsidianGearModElements.ModElement {
 	private static class ContainerRegisterHandler {
 		@SubscribeEvent
 		public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-			event.getRegistry().register(containerType.setRegistryName("aeon_forge"));
+			event.getRegistry().register(containerType.setRegistryName("aeon_forge_gui"));
 		}
 	}
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, AeonForgeGuiWindow::new));
+		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, AeonForgeGUIGuiWindow::new));
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -113,57 +113,61 @@ public class AeonForgeGui extends ObsidianGearModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 23, 6) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 8, 9) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 41, 6) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 26, 9) {
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 59, 6) {
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 44, 9) {
 			}));
-			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 77, 6) {
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 62, 9) {
 			}));
-			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 95, 6) {
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 80, 9) {
 			}));
-			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 23, 24) {
+			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 8, 27) {
 			}));
-			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 41, 24) {
+			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 26, 27) {
 			}));
-			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 59, 24) {
+			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 44, 27) {
 			}));
-			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 77, 24) {
+			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 62, 27) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
 			}));
-			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 95, 24) {
+			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 80, 27) {
 			}));
-			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 23, 42) {
+			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 8, 45) {
 			}));
-			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 41, 42) {
+			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 26, 45) {
 			}));
-			this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 59, 42) {
+			this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 44, 45) {
 			}));
-			this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 77, 42) {
+			this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 62, 45) {
 			}));
-			this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 95, 42) {
+			this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 80, 45) {
 			}));
-			this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 23, 60) {
+			this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 8, 63) {
 			}));
-			this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 41, 60) {
+			this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 26, 63) {
 			}));
-			this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 59, 60) {
+			this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 44, 63) {
 			}));
-			this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 77, 60) {
+			this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 62, 63) {
 			}));
-			this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 95, 60) {
+			this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 80, 63) {
 			}));
-			this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 23, 78) {
+			this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 8, 81) {
 			}));
-			this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 41, 78) {
+			this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 26, 81) {
 			}));
-			this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 59, 78) {
+			this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 44, 81) {
 			}));
-			this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 77, 78) {
+			this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 62, 81) {
 			}));
-			this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 95, 78) {
+			this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 80, 81) {
 			}));
-			this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 151, 42) {
+			this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 147, 45) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
@@ -173,15 +177,9 @@ public class AeonForgeGui extends ObsidianGearModElements.ModElement {
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-<<<<<<< HEAD
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 23 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 20 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 23 + 142));
-=======
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 17 + 84 + si * 18));
-			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 17 + 142));
->>>>>>> branch 'main' of https://github.com/SniperNation/obsidian-gear-mod
+				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 20 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
