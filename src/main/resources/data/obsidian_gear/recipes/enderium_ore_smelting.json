@@ -1,0 +1,12 @@
+{
+  "group": "obsidian_gear",
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "obsidian_gear:enderium_ore"
+  },
+  "result": {
+    "item": "obsidian_gear:enderium_ingot"
+  }
+}

@@ -28,6 +28,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.ScreenManager;
 
+import net.mcreator.obsidiangear.procedures.EnderiumRecipeACTProcedure;
 import net.mcreator.obsidiangear.ObsidianGearModElements;
 import net.mcreator.obsidiangear.ObsidianGearMod;
 
@@ -129,12 +130,6 @@ public class AeonForgeGUIGui extends ObsidianGearModElements.ModElement {
 			}));
 			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 44, 27) {
 			}));
-			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 62, 27) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
 			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 80, 27) {
 			}));
 			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 8, 45) {
@@ -172,6 +167,8 @@ public class AeonForgeGUIGui extends ObsidianGearModElements.ModElement {
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
+			}));
+			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 62, 27) {
 			}));
 			int si;
 			int sj;
@@ -420,6 +417,16 @@ public class AeonForgeGUIGui extends ObsidianGearModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EnderiumRecipeACTProcedure.executeProcedure($_dependencies);
+			}
+		}
 	}
 
 	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {

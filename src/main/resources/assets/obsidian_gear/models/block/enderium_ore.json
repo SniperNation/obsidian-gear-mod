@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "obsidian_gear:blocks/enderium_ore",
+    "particle": "obsidian_gear:blocks/enderium_ore"
+  }
+}

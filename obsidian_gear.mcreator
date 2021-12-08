@@ -1080,6 +1080,210 @@
           }
         ]
       }
+    },
+    {
+      "name": "EnderiumIngot",
+      "type": "item",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_ingot"
+    },
+    {
+      "name": "EnderiumOre",
+      "type": "block",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_ore"
+    },
+    {
+      "name": "EnderiumBlock",
+      "type": "block",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_block"
+    },
+    {
+      "name": "EnderiumOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_ore_block_recipe"
+    },
+    {
+      "name": "EnderiumBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_block_ore_recipe"
+    },
+    {
+      "name": "EnderiumOreSmelting",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_ore_smelting"
+    },
+    {
+      "name": "EnderiumPickaxe",
+      "type": "tool",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_pickaxe"
+    },
+    {
+      "name": "EnderiumAxe",
+      "type": "tool",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_axe"
+    },
+    {
+      "name": "EnderiumSword",
+      "type": "tool",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_sword"
+    },
+    {
+      "name": "EnderiumShovel",
+      "type": "tool",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_shovel"
+    },
+    {
+      "name": "EnderiumHoe",
+      "type": "tool",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_hoe"
+    },
+    {
+      "name": "EnderiumPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_pickaxe_recipe"
+    },
+    {
+      "name": "EnderiumAxeRecipe",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_axe_recipe"
+    },
+    {
+      "name": "EnderiumSwordRecipe",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_sword_recipe"
+    },
+    {
+      "name": "EnderiumShovelRecipe",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_shovel_recipe"
+    },
+    {
+      "name": "EnderiumHoeRecipe",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_hoe_recipe"
+    },
+    {
+      "name": "EnderiumArmor",
+      "type": "armor",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "EnderiumArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_armor_helmet_recipe"
+    },
+    {
+      "name": "EnderiumArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_armor_body_recipe"
+    },
+    {
+      "name": "EnderiumArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_armor_leggings_recipe"
+    },
+    {
+      "name": "EnderiumArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderium_armor_boots_recipe"
+    },
+    {
+      "name": "RedIronRecipe",
+      "type": "recipe",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_iron_recipe"
     }
   ],
   "variable_elements": [],
@@ -1088,13 +1292,16 @@
     "en_us": {
       "item.obsidian_gear.obsidian_helmet": "Obsidian Helmet",
       "item.obsidian_gear.obsidian_leggings": "Obsidian Leggings",
+      "block.obsidian_gear.enderium_ore": "Enderium Ore",
       "biome.obsidian_gear.desolate_plains": "Desolate Plains",
       "item.obsidian_gear.obsidian_pickaxe": "Obsidian Pickaxe",
       "advancements.the_void_entered.title": "Wow, Such Empty",
       "item.obsidian_gear.voidium_pickaxe": "Voidium Pickaxe",
       "enchantment.obsidian_gear.poison_touch": "Poison Touch",
       "biome.obsidian_gear.towering_peaks": "Towering Peaks",
+      "item.obsidian_gear.enderium_shovel": "Enderium Shovel",
       "item.obsidian_gear.kyrite_sword": "Kyrite Sword",
+      "item.obsidian_gear.enderium_armor_chestplate": "Enderium Chestplate",
       "item.obsidian_gear.voidium_armor_helmet": "Voidium Helmet",
       "itemGroup.tabobsidian_gear": "Obsidian Gear",
       "block.obsidian_gear.desolate_pressure_plate": "Desolate Pressure Plate",
@@ -1108,9 +1315,12 @@
       "block.obsidian_gear.desolate_leaves": "Desolate Leaves",
       "item.obsidian_gear.voidium_armor_chestplate": "Voidium Chestplate",
       "block.obsidian_gear.desolate_stairs": "Desolate Stairs",
+      "item.obsidian_gear.enderium_armor_helmet": "Enderium Helmet",
+      "item.obsidian_gear.enderium_pickaxe": "Enderium Pickaxe",
       "item.obsidian_gear.kyrite_armor_leggings": "Kyrite Leggings",
       "item.obsidian_gear.voidium_armor_boots": "Voidium Boots",
       "block.obsidian_gear.desolate_log": "Desolate Log",
+      "item.obsidian_gear.enderium_sword": "Enderium Sword",
       "item.obsidian_gear.the_void": "Void Portal Igniter",
       "block.obsidian_gear.desolate_planks": "Desolate Planks",
       "block.obsidian_gear.voidium_ore": "Voidium Ore",
@@ -1118,11 +1328,14 @@
       "block.obsidian_gear.voidium_block": "Block of Voidium",
       "block.obsidian_gear.void_portal_frame": "Void Portal Frame",
       "item.obsidian_gear.voidium_armor_leggings": "Voidium Leggings",
+      "block.obsidian_gear.enderium_block": "Block of Enderium",
       "block.obsidian_gear.desolate_button": "Desolate Button",
+      "item.obsidian_gear.enderium_axe": "Enderium Axe",
       "item.obsidian_gear.poison_water_bucket": "Poison Water Bucket",
       "item.obsidian_gear.voidium_shovel": "Voidium Shovel",
       "block.obsidian_gear.kyrite_ore": "Kyrite Ore",
       "block.obsidian_gear.void_stone": "Void Stone",
+      "item.obsidian_gear.enderium_armor_leggings": "Enderium Leggings",
       "biome.obsidian_gear.void_wastes": "Void Wastes",
       "block.obsidian_gear.kyrite_block": "Block of Kyrite",
       "item.obsidian_gear.kyrite_axe": "Kyrite Axe",
@@ -1138,8 +1351,11 @@
       "item.obsidian_gear.obsidian_sword": "Obsidian Sword",
       "item.obsidian_gear.voidium_sword": "Voidium Sword",
       "block.obsidian_gear.desolate_fence_gate": "Desolate Fence Gate",
+      "item.obsidian_gear.enderium_hoe": "Enderium Hoe",
       "item.obsidian_gear.obsidian_chestplate": "Obsidian Chestplate",
+      "item.obsidian_gear.enderium_ingot": "Enderium",
       "item.obsidian_gear.kyrite": "Kyrite",
+      "item.obsidian_gear.enderium_armor_boots": "Enderium Boots",
       "block.obsidian_gear.desolate_slab": "Desolate Slab",
       "enchantment.obsidian_gear.lifesteal": "Lifesteal",
       "block.obsidian_gear.poison_water": "Poison Water",

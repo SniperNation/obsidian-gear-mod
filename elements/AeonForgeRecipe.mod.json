@@ -10,28 +10,28 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.EMERALD_BLOCK"
+        "value": "Items.EMERALD"
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": "CUSTOM:RedIron"
       },
       {
-        "value": "Blocks.EMERALD_BLOCK"
+        "value": "Items.EMERALD"
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": "CUSTOM:RedIron"
       },
       {
         "value": "Items.LAVA_BUCKET"
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": "CUSTOM:RedIron"
       },
       {
         "value": "Items.DIAMOND"
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": "CUSTOM:RedIron"
       },
       {
         "value": "Items.DIAMOND"

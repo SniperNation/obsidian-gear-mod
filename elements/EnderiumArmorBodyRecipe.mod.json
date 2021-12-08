@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EnderiumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EnderiumIngot"
+      },
+      {
+        "value": "CUSTOM:EnderiumIngot"
+      },
+      {
+        "value": "CUSTOM:EnderiumIngot"
+      },
+      {
+        "value": "CUSTOM:EnderiumIngot"
+      },
+      {
+        "value": "CUSTOM:EnderiumIngot"
+      },
+      {
+        "value": "CUSTOM:EnderiumIngot"
+      },
+      {
+        "value": "CUSTOM:EnderiumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EnderiumArmor.body"
+    },
+    "name": "enderium_armor_body_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "group": "obsidian_gear",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:redstone_wire"
+    },
+    "3": {
+      "item": "minecraft:redstone_wire"
+    },
+    "4": {
+      "item": "minecraft:iron_block"
+    },
+    "5": {
+      "item": "minecraft:redstone_wire"
+    },
+    "7": {
+      "item": "minecraft:redstone_wire"
+    }
+  },
+  "result": {
+    "item": "obsidian_gear:red_iron",
+    "count": 1
+  }
+}

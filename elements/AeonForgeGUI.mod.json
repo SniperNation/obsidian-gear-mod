@@ -123,17 +123,6 @@
         }
       },
       {
-        "type": "outputslot",
-        "data": {
-          "id": 8,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
-          "name": "Slot #8",
-          "x": 187,
-          "y": 53
-        }
-      },
-      {
         "type": "inputslot",
         "data": {
           "inputLimit": {
@@ -382,6 +371,9 @@
         "type": "button",
         "data": {
           "text": "Craft",
+          "onClick": {
+            "name": "EnderiumRecipeACT"
+          },
           "width": 50,
           "height": 20,
           "name": "Craft",
@@ -400,6 +392,20 @@
           "name": "Aeon Forge",
           "x": 234,
           "y": 35
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 8,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #8",
+          "x": 187,
+          "y": 53
         }
       }
     ],

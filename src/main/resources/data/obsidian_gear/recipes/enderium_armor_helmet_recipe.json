@@ -1,0 +1,29 @@
+{
+  "group": "obsidian_gear",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "obsidian_gear:enderium_ingot"
+    },
+    "1": {
+      "item": "obsidian_gear:enderium_ingot"
+    },
+    "2": {
+      "item": "obsidian_gear:enderium_ingot"
+    },
+    "3": {
+      "item": "obsidian_gear:enderium_ingot"
+    },
+    "5": {
+      "item": "obsidian_gear:enderium_ingot"
+    }
+  },
+  "result": {
+    "item": "obsidian_gear:enderium_armor_helmet",
+    "count": 1
+  }
+}

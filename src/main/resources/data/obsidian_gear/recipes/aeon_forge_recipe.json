@@ -8,28 +8,28 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:emerald_block"
+      "item": "minecraft:emerald"
     },
     "1": {
-      "item": "minecraft:iron_block"
+      "item": "obsidian_gear:red_iron"
     },
     "2": {
-      "item": "minecraft:emerald_block"
+      "item": "minecraft:emerald"
     },
     "3": {
-      "item": "minecraft:iron_block"
+      "item": "obsidian_gear:red_iron"
     },
     "4": {
       "item": "minecraft:lava_bucket"
     },
     "5": {
-      "item": "minecraft:iron_block"
+      "item": "obsidian_gear:red_iron"
     },
     "6": {
       "item": "minecraft:diamond"
     },
     "7": {
-      "item": "minecraft:iron_block"
+      "item": "obsidian_gear:red_iron"
     },
     "8": {
       "item": "minecraft:diamond"
