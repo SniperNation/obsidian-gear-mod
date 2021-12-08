@@ -87,7 +87,7 @@ public class EnderiumOreBlock extends ObsidianGearModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.STONE)
+			if (blockAt.getBlock() == Blocks.END_STONE)
 				blockCriteria = true;
 			return blockCriteria;
 		}
@@ -107,7 +107,7 @@ public class EnderiumOreBlock extends ObsidianGearModElements.ModElement {
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
 					boolean dimensionCriteria = false;
-					if (dimensionType == World.OVERWORLD)
+					if (dimensionType == World.THE_END)
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
