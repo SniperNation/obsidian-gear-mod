@@ -8,12 +8,7 @@ The recipes for the items that differ from vanilla can be found <b><a href="http
 
 Instructions are in Release descriptions.
 
-### Snapshot Builds
-### Update: Snapshots are depreciated and the bleeding branch will no longer be updated. 
-The bleeding branch will be kept in the repo purely for historical purposes. <br>
-Snapshot builds can be compiled from the <b><a href="https://github.com/SniperNation/obsidian-gear-mod/tree/bleeding">Bleeding</a></b> branch. Please note that these builds are not final and may contain bugs. For tested releases please see <b><a href="https://github.com/SniperNation/obsidian-gear-mod/releases">Releases</a></b>.
-
-## Compile the mod
+## Compiling/Building
 If you want to compile the mod yourself (perhaps to build cutting edge versions) then follow the instructions below. <br>
 
 First, clone the repo by running:
