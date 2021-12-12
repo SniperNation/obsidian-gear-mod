@@ -1284,6 +1284,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "red_iron_recipe"
+    },
+    {
+      "name": "Logs",
+      "type": "tag",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "logs"
     }
   ],
   "variable_elements": [],
@@ -1372,8 +1381,8 @@
     "version": "v0.9-beta-1",
     "description": "Add obsidian gear like armor, tools and weapons as well as custom enchantments, biomes and blocks to your game!",
     "author": "SniperNation317",
-    "websiteURL": "https://github.com/SniperNation/obsidian-gear-mod",
-    "license": "Academic Free License v3.0",
+    "websiteURL": "https://snipernation.github.io/index.html",
+    "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "void_grass_plant",
