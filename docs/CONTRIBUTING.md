@@ -1,5 +1,5 @@
 # Contributing
-Follow these guidelines for contributing:
+First off, thanks for contributing to Obsidian Gear Mod! We truly appreciate it and hope that you will help us again in the future. To ensure that Pull Requests are easy to understand and follow a format that is easy to review, we request that you follow these guidelines:
 
 ## Format for Pull Requests
 
