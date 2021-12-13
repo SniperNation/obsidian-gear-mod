@@ -34,4 +34,4 @@ In the future I plan on adding more stuff to the installer. If you would like to
 If you do decide to contribute or help, I would like to say thank you :)
 
 ## Credits
-Thanks to MSTechSupport01! He helps me maintain documentation while I work on the actual mod.
+**https://github.com/SniperNation/obsidian-gear-mod/blob/main/docs/CREDITS.md**
