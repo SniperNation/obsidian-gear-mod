@@ -1293,6 +1293,195 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "logs"
+    },
+    {
+      "name": "SpookWood",
+      "type": "block",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_wood"
+    },
+    {
+      "name": "SpookLog",
+      "type": "block",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_log"
+    },
+    {
+      "name": "SpookPlanks",
+      "type": "block",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_planks"
+    },
+    {
+      "name": "SpookLeaves",
+      "type": "block",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_leaves"
+    },
+    {
+      "name": "SpookStairs",
+      "type": "block",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_stairs"
+    },
+    {
+      "name": "SpookSlab",
+      "type": "block",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_slab"
+    },
+    {
+      "name": "SpookFence",
+      "type": "block",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_fence"
+    },
+    {
+      "name": "SpookFenceGate",
+      "type": "block",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_fence_gate"
+    },
+    {
+      "name": "SpookPressurePlate",
+      "type": "block",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_pressure_plate"
+    },
+    {
+      "name": "SpookButton",
+      "type": "block",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_button"
+    },
+    {
+      "name": "SpookItemsTag",
+      "type": "tag",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_items_tag"
+    },
+    {
+      "name": "SpookWoodRecipe",
+      "type": "recipe",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_wood_recipe"
+    },
+    {
+      "name": "SpookPlanksRecipe",
+      "type": "recipe",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_planks_recipe"
+    },
+    {
+      "name": "SpookStairsRecipe",
+      "type": "recipe",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_stairs_recipe"
+    },
+    {
+      "name": "SpookSlabRecipe",
+      "type": "recipe",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_slab_recipe"
+    },
+    {
+      "name": "SpookFenceRecipe",
+      "type": "recipe",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_fence_recipe"
+    },
+    {
+      "name": "SpookFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_fence_gate_recipe"
+    },
+    {
+      "name": "SpookPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_pressure_plate_recipe"
+    },
+    {
+      "name": "SpookButtonRecipe",
+      "type": "recipe",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_button_recipe"
+    },
+    {
+      "name": "SpookStickRecipe",
+      "type": "recipe",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_stick_recipe"
+    },
+    {
+      "name": "SpookForest",
+      "type": "biome",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_forest"
     }
   ],
   "variable_elements": [],
@@ -1304,7 +1493,9 @@
       "block.obsidian_gear.enderium_ore": "Enderium Ore",
       "biome.obsidian_gear.desolate_plains": "Desolate Plains",
       "item.obsidian_gear.obsidian_pickaxe": "Obsidian Pickaxe",
+      "block.obsidian_gear.spook_fence_gate": "Spook Fence Gate",
       "advancements.the_void_entered.title": "Wow, Such Empty",
+      "block.obsidian_gear.spook_wood": "Spook Wood",
       "item.obsidian_gear.voidium_pickaxe": "Voidium Pickaxe",
       "enchantment.obsidian_gear.poison_touch": "Poison Touch",
       "biome.obsidian_gear.towering_peaks": "Towering Peaks",
@@ -1313,8 +1504,10 @@
       "item.obsidian_gear.enderium_armor_chestplate": "Enderium Chestplate",
       "item.obsidian_gear.voidium_armor_helmet": "Voidium Helmet",
       "itemGroup.tabobsidian_gear": "Obsidian Gear",
+      "block.obsidian_gear.spook_leaves": "Spook Leaves",
       "block.obsidian_gear.desolate_pressure_plate": "Desolate Pressure Plate",
       "item.obsidian_gear.kyrite_hoe": "Kyrite Hoe",
+      "block.obsidian_gear.spook_log": "Spook Log",
       "item.obsidian_gear.obsidian_boots": "Obsidian Boots",
       "item.obsidian_gear.kyrite_armor_helmet": "Kyrite Helmet",
       "advancements.the_void_entered.descr": "Enter the Void Dimension.",
@@ -1330,6 +1523,7 @@
       "item.obsidian_gear.voidium_armor_boots": "Voidium Boots",
       "block.obsidian_gear.desolate_log": "Desolate Log",
       "item.obsidian_gear.enderium_sword": "Enderium Sword",
+      "block.obsidian_gear.spook_slab": "Spook Slab",
       "item.obsidian_gear.the_void": "Void Portal Igniter",
       "block.obsidian_gear.desolate_planks": "Desolate Planks",
       "block.obsidian_gear.voidium_ore": "Voidium Ore",
@@ -1352,6 +1546,7 @@
       "block.obsidian_gear.void_grass_plant": "Void Grass ",
       "item.obsidian_gear.voidium_axe": "Voidium Axe",
       "item.obsidian_gear.kyrite_shovel": "Kyrite Shovel",
+      "block.obsidian_gear.spook_pressure_plate": "Spook Pressure Plate",
       "item.obsidian_gear.kyrite_pickaxe": "Kyrite Pickaxe",
       "block.obsidian_gear.desolate_wood": "Desolate Wood",
       "item.obsidian_gear.kyrite_armor_chestplate": "Kyrite Chestplate",
@@ -1360,15 +1555,20 @@
       "item.obsidian_gear.obsidian_sword": "Obsidian Sword",
       "item.obsidian_gear.voidium_sword": "Voidium Sword",
       "block.obsidian_gear.desolate_fence_gate": "Desolate Fence Gate",
+      "block.obsidian_gear.spook_stairs": "Spook Stairs",
       "item.obsidian_gear.enderium_hoe": "Enderium Hoe",
       "item.obsidian_gear.obsidian_chestplate": "Obsidian Chestplate",
       "item.obsidian_gear.enderium_ingot": "Enderium",
       "item.obsidian_gear.kyrite": "Kyrite",
+      "block.obsidian_gear.spook_button": "Spook Button",
+      "block.obsidian_gear.spook_planks": "Spook Planks",
+      "block.obsidian_gear.spook_fence": "Spook Fence",
       "item.obsidian_gear.enderium_armor_boots": "Enderium Boots",
       "block.obsidian_gear.desolate_slab": "Desolate Slab",
       "enchantment.obsidian_gear.lifesteal": "Lifesteal",
       "block.obsidian_gear.poison_water": "Poison Water",
-      "block.obsidian_gear.aeon_forge_block": "Aeon Forge"
+      "block.obsidian_gear.aeon_forge_block": "Aeon Forge",
+      "biome.obsidian_gear.spook_forest": "Spook Forest"
     }
   },
   "foldersRoot": {

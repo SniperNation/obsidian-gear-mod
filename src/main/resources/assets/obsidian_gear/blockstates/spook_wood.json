@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "obsidian_gear:block/spook_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "obsidian_gear:block/spook_wood"
+    },
+    "axis=z": {
+      "model": "obsidian_gear:block/spook_wood",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "obsidian_gear:blocks/spook_planks",
+    "top": "obsidian_gear:blocks/spook_planks",
+    "side": "obsidian_gear:blocks/spook_planks"
+  }
+}

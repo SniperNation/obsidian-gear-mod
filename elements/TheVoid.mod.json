@@ -11,6 +11,9 @@
       },
       {
         "value": "CUSTOM:ToweringPeaks"
+      },
+      {
+        "value": "CUSTOM:SpookForest"
       }
     ],
     "worldGenType": "Normal world gen",

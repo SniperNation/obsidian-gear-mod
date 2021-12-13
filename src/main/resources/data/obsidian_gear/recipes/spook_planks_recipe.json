@@ -1,0 +1,13 @@
+{
+  "group": "obsidian_gear",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:spook_log"
+    }
+  ],
+  "result": {
+    "item": "obsidian_gear:spook_planks",
+    "count": 4
+  }
+}

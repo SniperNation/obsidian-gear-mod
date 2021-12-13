@@ -2,19 +2,19 @@
   "_fv": 24,
   "_type": "tag",
   "definition": {
-    "type": "Blocks",
-    "items": [],
-    "blocks": [
+    "type": "Items",
+    "items": [
       {
-        "value": "CUSTOM:DesolateLog"
+        "value": "CUSTOM:SpookWood"
       },
       {
         "value": "CUSTOM:SpookLog"
       }
     ],
+    "blocks": [],
     "functions": [],
     "entities": [],
-    "name": "logs",
-    "namespace": "minecraft"
+    "name": "spook_log",
+    "namespace": "forge"
   }
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "obsidian_gear:blocks/spook_planks",
+    "particle": "obsidian_gear:blocks/spook_planks"
+  }
+}
