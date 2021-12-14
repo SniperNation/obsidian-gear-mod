@@ -1482,6 +1482,132 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "spook_forest"
+    },
+    {
+      "name": "WoodPickCustom1",
+      "type": "recipe",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_pick_custom_1"
+    },
+    {
+      "name": "WoodPickCustom2",
+      "type": "recipe",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_pick_custom_2"
+    },
+    {
+      "name": "WoodSwordCustom1",
+      "type": "recipe",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_sword_custom_1"
+    },
+    {
+      "name": "WoodSwordCustom2",
+      "type": "recipe",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_sword_custom_2"
+    },
+    {
+      "name": "WoodAxeCustom1",
+      "type": "recipe",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_axe_custom_1"
+    },
+    {
+      "name": "WoodAxeCustom12",
+      "type": "recipe",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_axe_custom_12"
+    },
+    {
+      "name": "WoodAxeCustom2",
+      "type": "recipe",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_axe_custom_2"
+    },
+    {
+      "name": "WoodAxeCustom22",
+      "type": "recipe",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_axe_custom_22"
+    },
+    {
+      "name": "WoodShovelCustom1",
+      "type": "recipe",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_shovel_custom_1"
+    },
+    {
+      "name": "WoodShovelCustom2",
+      "type": "recipe",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_shovel_custom_2"
+    },
+    {
+      "name": "WoodHoeCustom1",
+      "type": "recipe",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_hoe_custom_1"
+    },
+    {
+      "name": "WoodHoeCustom12",
+      "type": "recipe",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_hoe_custom_12"
+    },
+    {
+      "name": "WoodHoeCustom2",
+      "type": "recipe",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_hoe_custom_2"
+    },
+    {
+      "name": "WoodHoeCustom22",
+      "type": "recipe",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_hoe_custom_22"
     }
   ],
   "variable_elements": [],
