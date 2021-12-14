@@ -25,8 +25,7 @@ Finally, build the mod:
   ```
 
 ### For developers
-
-You can contribute by directly commiting or forking the repository.
+**https://github.com/SniperNation/obsidian-gear-mod/blob/main/docs/CONTRIBUTING.md**
 
 ## Roadmap
 
