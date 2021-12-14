@@ -1608,6 +1608,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "wood_hoe_custom_22"
+    },
+    {
+      "name": "SpookForestPainting",
+      "type": "painting",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spook_forest_painting"
     }
   ],
   "variable_elements": [],
@@ -1623,7 +1632,7 @@
       "advancements.the_void_entered.title": "Wow, Such Empty",
       "block.obsidian_gear.spook_wood": "Spook Wood",
       "item.obsidian_gear.voidium_pickaxe": "Voidium Pickaxe",
-      "enchantment.obsidian_gear.poison_touch": "Poison Touch",
+      "enchantment.obsidian_gear.poison_touch": "Imbued",
       "biome.obsidian_gear.towering_peaks": "Towering Peaks",
       "item.obsidian_gear.enderium_shovel": "Enderium Shovel",
       "item.obsidian_gear.kyrite_sword": "Kyrite Sword",
