@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Curse of The End",
+    "icon": "ender_pearl_je3_be2.png",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "CurseOfTheEndProcedure"
+    },
+    "onActiveTick": {
+      "name": "CurseOfTheEndProcedure"
+    },
+    "onExpired": {
+      "name": "ClearTeleportationEffect"
+    }
+  }
+}
