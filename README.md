@@ -4,7 +4,7 @@ Hey! This mod adds a buncha stuff like enchantments, dimensions, biomes, blocks,
 
 The recipes for the items that differ from vanilla can be found <b><a href="https://imgur.com/a/N62zrhI">here</a>. </b>
 
-## Use Forge 36.2.0 / 36.2.6 (1.16.5)!
+## Use Forge 337.1.1 (1.17.1)!
 
 Instructions are in Release descriptions.
 
