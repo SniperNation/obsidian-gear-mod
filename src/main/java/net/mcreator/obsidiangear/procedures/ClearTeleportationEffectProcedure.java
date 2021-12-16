@@ -1,23 +1,15 @@
 package net.mcreator.obsidiangear.procedures;
 
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 
-import net.mcreator.obsidiangear.potion.CurseOfTheEndEffectPotionEffect;
-import net.mcreator.obsidiangear.ObsidianGearMod;
-
-import java.util.Map;
+import net.mcreator.obsidiangear.init.ObsidianGearModMobEffects;
 
 public class ClearTeleportationEffectProcedure {
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				ObsidianGearMod.LOGGER.warn("Failed to load dependency entity for procedure ClearTeleportationEffect!");
+	public static void execute(Entity entity) {
+		if (entity == null)
 			return;
-		}
-		Entity entity = (Entity) dependencies.get("entity");
-		if (entity instanceof LivingEntity) {
-			((LivingEntity) entity).removePotionEffect(CurseOfTheEndEffectPotionEffect.potion);
-		}
+		if (entity instanceof LivingEntity _entity)
+			_entity.removeEffect(ObsidianGearModMobEffects.CURSE_OF_THE_END_EFFECT);
 	}
 }

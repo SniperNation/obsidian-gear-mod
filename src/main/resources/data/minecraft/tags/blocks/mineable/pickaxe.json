@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "obsidian_gear:void_stone",
+    "obsidian_gear:kyrite_ore",
+    "obsidian_gear:kyrite_block",
+    "obsidian_gear:voidium_ore",
+    "obsidian_gear:voidium_block",
+    "obsidian_gear:enderium_ore",
+    "obsidian_gear:enderium_block"
+  ]
+}

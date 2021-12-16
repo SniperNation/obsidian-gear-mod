@@ -1,135 +1,86 @@
 
 package net.mcreator.obsidiangear.world.biome;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilderBaseConfiguration;
+import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilder;
+import net.minecraft.world.level.levelgen.surfacebuilders.ConfiguredSurfaceBuilder;
+import net.minecraft.world.level.levelgen.placement.FrequencyWithExtraChanceDecoratorConfiguration;
+import net.minecraft.world.level.levelgen.placement.FeatureDecorator;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.SimpleStateProvider;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.NoiseDependantDecoratorConfiguration;
+import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.biome.BiomeSpecialEffects;
+import net.minecraft.world.level.biome.BiomeGenerationSettings;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.data.worldgen.Features;
+import net.minecraft.data.worldgen.BiomeDefaultFeatures;
+import net.minecraft.data.BuiltinRegistries;
+import net.minecraft.core.Registry;
 
-import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
-import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
-import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
-import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.NoiseDependant;
-import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
-import net.minecraft.world.gen.feature.TwoLayerFeature;
-import net.minecraft.world.gen.feature.Features;
-import net.minecraft.world.gen.feature.FeatureSpread;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
-import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.biome.BiomeGenerationSettings;
-import net.minecraft.world.biome.BiomeAmbience;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.IWorldWriter;
-import net.minecraft.util.math.MutableBoundingBox;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.state.BooleanProperty;
-import net.minecraft.block.Blocks;
+import net.mcreator.obsidiangear.world.features.treedecorators.SpookForestTrunkDecorator;
+import net.mcreator.obsidiangear.world.features.treedecorators.SpookForestLeaveDecorator;
+import net.mcreator.obsidiangear.init.ObsidianGearModBlocks;
+import net.mcreator.obsidiangear.ObsidianGearMod;
 
-import net.mcreator.obsidiangear.block.VoidStoneBlock;
-import net.mcreator.obsidiangear.block.VoidGrassBlock;
-import net.mcreator.obsidiangear.block.SpookLogBlock;
-import net.mcreator.obsidiangear.block.SpookLeavesBlock;
-import net.mcreator.obsidiangear.ObsidianGearModElements;
-
-import java.util.Set;
+import java.util.Map;
+import java.util.HashMap;
 
 import com.google.common.collect.ImmutableList;
 
-@ObsidianGearModElements.ModElement.Tag
-public class SpookForestBiome extends ObsidianGearModElements.ModElement {
-	public static Biome biome;
-	public SpookForestBiome(ObsidianGearModElements instance) {
-		super(instance, 149);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
-	}
-	private static class BiomeRegisterHandler {
-		@SubscribeEvent
-		public void registerBiomes(RegistryEvent.Register<Biome> event) {
-			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(4159204).setWaterFogColor(329011)
-						.withSkyColor(7972607).withFoliageColor(10387789).withGrassColor(9470285).build();
-				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(VoidGrassBlock.block.getDefaultState(),
-								VoidStoneBlock.block.getDefaultState(), VoidStoneBlock.block.getDefaultState())));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
-						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(SpookLogBlock.block.getDefaultState()),
-								new SimpleBlockStateProvider(SpookLeavesBlock.block.getDefaultState()),
-								new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
-								new StraightTrunkPlacer(7, 2, 0), new TwoLayerFeature(1, 0, 1)))
-										.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance, CustomTrunkVineTreeDecorator.instance))
-										.setMaxWaterDepth(0).build())
-						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.RANDOM_PATCH.withConfiguration(Features.Configs.GRASS_PATCH_CONFIG).withPlacement(Features.Placements.PATCH_PLACEMENT)
-								.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8D, 5, 4))));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.FLOWER.withConfiguration(Features.Configs.NORMAL_FLOWER_CONFIG)
-								.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-								.func_242731_b(4));
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
-				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
-				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.NONE).depth(0.1f).scale(0.2f).temperature(0.5f)
-						.downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
-						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("obsidian_gear:spook_forest"));
-			}
-		}
-	}
-	@Override
-	public void init(FMLCommonSetupEvent event) {
-	}
-	private static class CustomLeaveVineTreeDecorator extends LeaveVineTreeDecorator {
-		public static final CustomLeaveVineTreeDecorator instance = new CustomLeaveVineTreeDecorator();
-		public static com.mojang.serialization.Codec<LeaveVineTreeDecorator> codec;
-		public static TreeDecoratorType tdt;
-		static {
-			codec = com.mojang.serialization.Codec.unit(() -> instance);
-			tdt = new TreeDecoratorType(codec);
-			tdt.setRegistryName("spook_forest_lvtd");
-			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
-		}
-		@Override
-		protected TreeDecoratorType<?> func_230380_a_() {
-			return tdt;
-		}
+public class SpookForestBiome {
+	private static final ConfiguredSurfaceBuilder<?> SURFACE_BUILDER = SurfaceBuilder.DEFAULT
+			.configured(new SurfaceBuilderBaseConfiguration(ObsidianGearModBlocks.VOID_GRASS.defaultBlockState(),
+					ObsidianGearModBlocks.VOID_STONE.defaultBlockState(), ObsidianGearModBlocks.VOID_STONE.defaultBlockState()));
 
-		@Override
-		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, Blocks.VINE.getDefaultState(), sbc, mbb);
-		}
+	public static Biome createBiome() {
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
+				.foliageColorOverride(10387789).grassColorOverride(9470285).build();
+		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().surfaceBuilder(SURFACE_BUILDER);
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, register("trees", Feature.TREE
+				.configured(
+						(new TreeConfiguration.TreeConfigurationBuilder(new SimpleStateProvider(ObsidianGearModBlocks.SPOOK_LOG.defaultBlockState()),
+								new StraightTrunkPlacer(7, 2, 0), new SimpleStateProvider(ObsidianGearModBlocks.SPOOK_LEAVES.defaultBlockState()),
+								new SimpleStateProvider(Blocks.OAK_SAPLING.defaultBlockState()),
+								new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1)))
+										.decorators(ImmutableList.of(SpookForestLeaveDecorator.INSTANCE, SpookForestTrunkDecorator.INSTANCE)).build())
+				.decorated(Features.Decorators.HEIGHTMAP_SQUARE)
+				.decorated(FeatureDecorator.COUNT_EXTRA.configured(new FrequencyWithExtraChanceDecoratorConfiguration(3, 0.1F, 1)))));
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+				register("grass",
+						Feature.RANDOM_PATCH.configured(Features.Configs.DEFAULT_GRASS_CONFIG).decorated(Features.Decorators.HEIGHTMAP_DOUBLE_SQUARE)
+								.decorated(FeatureDecorator.COUNT_NOISE.configured(new NoiseDependantDecoratorConfiguration(-0.8D, 5, 4)))));
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+				register("flower", Feature.FLOWER.configured(Features.Configs.DEFAULT_FLOWER_CONFIG).decorated(Features.Decorators.ADD_32)
+						.decorated(Features.Decorators.HEIGHTMAP_SQUARE).count(4)));
+		BiomeDefaultFeatures.addDefaultCarvers(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
+		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
+		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder().setPlayerCanSpawn();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.NONE).depth(0.1f).scale(0.2f)
+				.temperature(0.5f).downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build())
+				.generationSettings(biomeGenerationSettings.build()).build();
 	}
 
-	private static class CustomTrunkVineTreeDecorator extends TrunkVineTreeDecorator {
-		public static final CustomTrunkVineTreeDecorator instance = new CustomTrunkVineTreeDecorator();
-		public static com.mojang.serialization.Codec<CustomTrunkVineTreeDecorator> codec;
-		public static TreeDecoratorType tdt;
-		static {
-			codec = com.mojang.serialization.Codec.unit(() -> instance);
-			tdt = new TreeDecoratorType(codec);
-			tdt.setRegistryName("spook_forest_tvtd");
-			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
-		}
-		@Override
-		protected TreeDecoratorType<?> func_230380_a_() {
-			return tdt;
-		}
+	public static void init() {
+		Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, new ResourceLocation(ObsidianGearMod.MODID, "spook_forest"), SURFACE_BUILDER);
+		CONFIGURED_FEATURES.forEach((resourceLocation, configuredFeature) -> Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, resourceLocation,
+				configuredFeature));
+	}
 
-		@Override
-		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, Blocks.VINE.getDefaultState(), sbc, mbb);
-		}
+	private static final Map<ResourceLocation, ConfiguredFeature<?, ?>> CONFIGURED_FEATURES = new HashMap<>();
+
+	private static ConfiguredFeature<?, ?> register(String name, ConfiguredFeature<?, ?> configuredFeature) {
+		CONFIGURED_FEATURES.put(new ResourceLocation(ObsidianGearMod.MODID, name + "_spook_forest"), configuredFeature);
+		return configuredFeature;
 	}
 }

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "obsidian_gear:desolate_wood",
-    "obsidian_gear:desolate_log"
+    "obsidian_gear:desolate_log",
+    "obsidian_gear:desolate_wood"
   ]
 }

@@ -1,73 +1,57 @@
 
 package net.mcreator.obsidiangear.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.world.World;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.AxeItem;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.entity.LivingEntity;
 
 import net.mcreator.obsidiangear.procedures.ImbuedProcedure;
-import net.mcreator.obsidiangear.ObsidianGearModElements;
+import net.mcreator.obsidiangear.init.ObsidianGearModItems;
 
-import java.util.Map;
-import java.util.HashMap;
-
-@ObsidianGearModElements.ModElement.Tag
-public class KyriteAxeItem extends ObsidianGearModElements.ModElement {
-	@ObjectHolder("obsidian_gear:kyrite_axe")
-	public static final Item block = null;
-	public KyriteAxeItem(ObsidianGearModElements instance) {
-		super(instance, 27);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new AxeItem(new IItemTier() {
-			public int getMaxUses() {
+public class KyriteAxeItem extends AxeItem {
+	public KyriteAxeItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 3200;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 10f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 18f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 5;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 35;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(KyriteItem.block));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(ObsidianGearModItems.KYRITE));
 			}
-		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
-			@Override
-			public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-				boolean retval = super.hitEntity(itemstack, entity, sourceentity);
-				double x = entity.getPosX();
-				double y = entity.getPosY();
-				double z = entity.getPosZ();
-				World world = entity.world;
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("itemstack", itemstack);
-					ImbuedProcedure.executeProcedure($_dependencies);
-				}
-				return retval;
-			}
-		}.setRegistryName("kyrite_axe"));
+		}, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+		setRegistryName("kyrite_axe");
+	}
+
+	@Override
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		Level world = entity.level;
+
+		ImbuedProcedure.execute(entity, itemstack);
+		return retval;
 	}
 }

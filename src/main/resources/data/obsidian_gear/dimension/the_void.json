@@ -83,6 +83,12 @@
       "bedrock_floor_position": 0,
       "sea_level": 63,
       "disable_mob_generation": true,
+      "noodle_caves_enabled": false,
+      "noise_caves_enabled": false,
+      "aquifers_enabled": false,
+      "deepslate_enabled": false,
+      "ore_veins_enabled": false,
+      "min_surface_level": 0,
       "default_block": {
         "Name": "obsidian_gear:void_stone"
       },

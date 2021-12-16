@@ -1,52 +1,42 @@
 
 package net.mcreator.obsidiangear.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.HoeItem;
+import net.minecraft.world.item.CreativeModeTab;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.HoeItem;
+import net.mcreator.obsidiangear.init.ObsidianGearModItems;
 
-import net.mcreator.obsidiangear.ObsidianGearModElements;
-
-@ObsidianGearModElements.ModElement.Tag
-public class EnderiumHoeItem extends ObsidianGearModElements.ModElement {
-	@ObjectHolder("obsidian_gear:enderium_hoe")
-	public static final Item block = null;
-	public EnderiumHoeItem(ObsidianGearModElements instance) {
-		super(instance, 115);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new HoeItem(new IItemTier() {
-			public int getMaxUses() {
+public class EnderiumHoeItem extends HoeItem {
+	public EnderiumHoeItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 250;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 6f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 0f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 2;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 14;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(EnderiumIngotItem.block));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(ObsidianGearModItems.ENDERIUM_INGOT));
 			}
-		}, 0, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
-		}.setRegistryName("enderium_hoe"));
+		}, 0, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+		setRegistryName("enderium_hoe");
 	}
 }

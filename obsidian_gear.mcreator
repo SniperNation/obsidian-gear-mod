@@ -1747,6 +1747,7 @@
       "item.obsidian_gear.kyrite_axe": "Kyrite Axe",
       "block.obsidian_gear.void_grass": "Void Grass Block",
       "block.obsidian_gear.void_grass_plant": "Void Grass ",
+      "effect.obsidian_gear.curse_of_the_end_effect": "Curse of The End",
       "item.obsidian_gear.voidium_axe": "Voidium Axe",
       "item.obsidian_gear.kyrite_shovel": "Kyrite Shovel",
       "block.obsidian_gear.spook_pressure_plate": "Spook Pressure Plate",
@@ -1794,10 +1795,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.16.5",
+    "currentGenerator": "forge-1.17.1",
     "credits": "Created by SniperNation317 (thesnipercitation#9118 is the discord)",
     "modElementsPackage": "net.mcreator.obsidiangear",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100236710
+  "mcreatorVersion": 202100351219
 }

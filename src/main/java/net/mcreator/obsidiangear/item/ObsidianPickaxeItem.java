@@ -1,66 +1,55 @@
 
 package net.mcreator.obsidiangear.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-
-import net.mcreator.obsidiangear.ObsidianGearModElements;
-
-@ObsidianGearModElements.ModElement.Tag
-public class ObsidianPickaxeItem extends ObsidianGearModElements.ModElement {
-	@ObjectHolder("obsidian_gear:obsidian_pickaxe")
-	public static final Item block = null;
-	public ObsidianPickaxeItem(ObsidianGearModElements instance) {
-		super(instance, 1);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new PickaxeItem(new IItemTier() {
-			public int getMaxUses() {
+public class ObsidianPickaxeItem extends PickaxeItem {
+	public ObsidianPickaxeItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 4000;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 18f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 5f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 4;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 2;
 			}
 
-			public Ingredient getRepairMaterial() {
+			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS).isImmuneToFire()) {
-			@Override
-			public boolean hasContainerItem() {
-				return true;
-			}
+		}, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).fireResistant());
+		setRegistryName("obsidian_pickaxe");
+	}
 
-			@Override
-			public ItemStack getContainerItem(ItemStack itemstack) {
-				return new ItemStack(this);
-			}
+	@Override
+	public boolean hasContainerItem(ItemStack stack) {
+		return true;
+	}
 
-			@Override
-			public boolean isRepairable(ItemStack itemstack) {
-				return false;
-			}
-		}.setRegistryName("obsidian_pickaxe"));
+	@Override
+	public ItemStack getContainerItem(ItemStack itemstack) {
+		return new ItemStack(this);
+	}
+
+	@Override
+	public boolean isRepairable(ItemStack itemstack) {
+		return false;
 	}
 }

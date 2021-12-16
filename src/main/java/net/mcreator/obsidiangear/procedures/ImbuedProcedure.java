@@ -1,35 +1,22 @@
 package net.mcreator.obsidiangear.procedures;
 
-import net.minecraft.potion.Effects;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 
-import net.mcreator.obsidiangear.enchantment.PoisonTouchEnchantment;
-import net.mcreator.obsidiangear.ObsidianGearMod;
-
-import java.util.Map;
+import net.mcreator.obsidiangear.init.ObsidianGearModEnchantments;
 
 public class ImbuedProcedure {
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				ObsidianGearMod.LOGGER.warn("Failed to load dependency entity for procedure Imbued!");
+	public static void execute(Entity entity, ItemStack itemstack) {
+		if (entity == null)
 			return;
-		}
-		if (dependencies.get("itemstack") == null) {
-			if (!dependencies.containsKey("itemstack"))
-				ObsidianGearMod.LOGGER.warn("Failed to load dependency itemstack for procedure Imbued!");
-			return;
-		}
-		Entity entity = (Entity) dependencies.get("entity");
-		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
-		if (((EnchantmentHelper.getEnchantmentLevel(PoisonTouchEnchantment.enchantment, (itemstack))) == 1)) {
-			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.POISON,
-						(int) (100 * (EnchantmentHelper.getEnchantmentLevel(PoisonTouchEnchantment.enchantment, (itemstack)))), (int) 1));
+		if (EnchantmentHelper.getItemEnchantmentLevel(ObsidianGearModEnchantments.POISON_TOUCH, itemstack) == 1) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.POISON,
+						(int) (100 * EnchantmentHelper.getItemEnchantmentLevel(ObsidianGearModEnchantments.POISON_TOUCH, itemstack)), 1));
 		}
 	}
 }

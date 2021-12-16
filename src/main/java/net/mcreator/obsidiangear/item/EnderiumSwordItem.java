@@ -1,52 +1,42 @@
 
 package net.mcreator.obsidiangear.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
+import net.mcreator.obsidiangear.init.ObsidianGearModItems;
 
-import net.mcreator.obsidiangear.ObsidianGearModElements;
-
-@ObsidianGearModElements.ModElement.Tag
-public class EnderiumSwordItem extends ObsidianGearModElements.ModElement {
-	@ObjectHolder("obsidian_gear:enderium_sword")
-	public static final Item block = null;
-	public EnderiumSwordItem(ObsidianGearModElements instance) {
-		super(instance, 113);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new SwordItem(new IItemTier() {
-			public int getMaxUses() {
+public class EnderiumSwordItem extends SwordItem {
+	public EnderiumSwordItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 250;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 6f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 0f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 2;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 14;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(EnderiumIngotItem.block));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(ObsidianGearModItems.ENDERIUM_INGOT));
 			}
-		}, 3, -3f, new Item.Properties().group(ItemGroup.COMBAT)) {
-		}.setRegistryName("enderium_sword"));
+		}, 3, -3f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+		setRegistryName("enderium_sword");
 	}
 }
