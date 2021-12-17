@@ -1894,6 +1894,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "enderite_ingot_recipe"
+    },
+    {
+      "name": "FusedCoal",
+      "type": "item",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fused_coal"
+    },
+    {
+      "name": "FusedCoalRecipe",
+      "type": "recipe",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fused_coal_recipe"
+    },
+    {
+      "name": "FusedCoalFuel",
+      "type": "fuel",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fused_coal_fuel"
     }
   ],
   "variable_elements": [],
@@ -1939,6 +1966,7 @@
       "block.obsidian_gear.void_stone": "Void Stone",
       "block.obsidian_gear.kyrite_block": "Block of Kyrite",
       "item.obsidian_gear.kyrite_axe": "Kyrite Axe",
+      "item.obsidian_gear.fused_coal": "Fused Coal",
       "item.minecraft.tipped_arrow.effect.teleportation": "Arrow of Teleportation",
       "item.obsidian_gear.enderite_ingot": "Enderite",
       "item.obsidian_gear.enderite_scrap": "Enderite Scrap",

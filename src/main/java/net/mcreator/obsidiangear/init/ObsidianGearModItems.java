@@ -32,6 +32,7 @@ import net.mcreator.obsidiangear.item.KyriteItem;
 import net.mcreator.obsidiangear.item.KyriteHoeItem;
 import net.mcreator.obsidiangear.item.KyriteAxeItem;
 import net.mcreator.obsidiangear.item.KyriteArmorItem;
+import net.mcreator.obsidiangear.item.FusedCoalItem;
 import net.mcreator.obsidiangear.item.EnderiumSwordItem;
 import net.mcreator.obsidiangear.item.EnderiumShovelItem;
 import net.mcreator.obsidiangear.item.EnderiumPickaxeItem;
@@ -137,6 +138,7 @@ public class ObsidianGearModItems {
 	public static final Item ENDERITE_ARMOR_LEGGINGS = register(new EnderiteArmorItem.Leggings());
 	public static final Item ENDERITE_ARMOR_BOOTS = register(new EnderiteArmorItem.Boots());
 	public static final Item ENDERITE_SCRAP = register(new EnderiteScrapItem());
+	public static final Item FUSED_COAL = register(new FusedCoalItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
