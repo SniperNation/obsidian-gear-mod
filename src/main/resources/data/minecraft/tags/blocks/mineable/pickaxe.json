@@ -7,6 +7,8 @@
     "obsidian_gear:voidium_ore",
     "obsidian_gear:voidium_block",
     "obsidian_gear:enderium_ore",
-    "obsidian_gear:enderium_block"
+    "obsidian_gear:enderium_block",
+    "obsidian_gear:enderite_ore",
+    "obsidian_gear:enderite_block"
   ]
 }

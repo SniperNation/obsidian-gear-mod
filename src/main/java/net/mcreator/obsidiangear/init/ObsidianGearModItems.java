@@ -39,6 +39,14 @@ import net.mcreator.obsidiangear.item.EnderiumIngotItem;
 import net.mcreator.obsidiangear.item.EnderiumHoeItem;
 import net.mcreator.obsidiangear.item.EnderiumAxeItem;
 import net.mcreator.obsidiangear.item.EnderiumArmorItem;
+import net.mcreator.obsidiangear.item.EnderiteSwordItem;
+import net.mcreator.obsidiangear.item.EnderiteShovelItem;
+import net.mcreator.obsidiangear.item.EnderiteScrapItem;
+import net.mcreator.obsidiangear.item.EnderitePickaxeItem;
+import net.mcreator.obsidiangear.item.EnderiteIngotItem;
+import net.mcreator.obsidiangear.item.EnderiteHoeItem;
+import net.mcreator.obsidiangear.item.EnderiteAxeItem;
+import net.mcreator.obsidiangear.item.EnderiteArmorItem;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -116,6 +124,19 @@ public class ObsidianGearModItems {
 	public static final Item SPOOK_FENCE_GATE = register(ObsidianGearModBlocks.SPOOK_FENCE_GATE, CreativeModeTab.TAB_REDSTONE);
 	public static final Item SPOOK_PRESSURE_PLATE = register(ObsidianGearModBlocks.SPOOK_PRESSURE_PLATE, CreativeModeTab.TAB_REDSTONE);
 	public static final Item SPOOK_BUTTON = register(ObsidianGearModBlocks.SPOOK_BUTTON, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
+	public static final Item ENDERITE_INGOT = register(new EnderiteIngotItem());
+	public static final Item ENDERITE_ORE = register(ObsidianGearModBlocks.ENDERITE_ORE, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
+	public static final Item ENDERITE_BLOCK = register(ObsidianGearModBlocks.ENDERITE_BLOCK, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
+	public static final Item ENDERITE_PICKAXE = register(new EnderitePickaxeItem());
+	public static final Item ENDERITE_AXE = register(new EnderiteAxeItem());
+	public static final Item ENDERITE_SWORD = register(new EnderiteSwordItem());
+	public static final Item ENDERITE_SHOVEL = register(new EnderiteShovelItem());
+	public static final Item ENDERITE_HOE = register(new EnderiteHoeItem());
+	public static final Item ENDERITE_ARMOR_HELMET = register(new EnderiteArmorItem.Helmet());
+	public static final Item ENDERITE_ARMOR_CHESTPLATE = register(new EnderiteArmorItem.Chestplate());
+	public static final Item ENDERITE_ARMOR_LEGGINGS = register(new EnderiteArmorItem.Leggings());
+	public static final Item ENDERITE_ARMOR_BOOTS = register(new EnderiteArmorItem.Boots());
+	public static final Item ENDERITE_SCRAP = register(new EnderiteScrapItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

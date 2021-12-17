@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "obsidian_gear:enderite_block"
+    }
+  ],
+  "result": {
+    "item": "obsidian_gear:enderite_ingot",
+    "count": 9
+  }
+}

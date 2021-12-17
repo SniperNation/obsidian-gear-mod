@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "0": {
+      "item": "obsidian_gear:enderite_scrap"
+    },
+    "1": {
+      "item": "obsidian_gear:enderite_scrap"
+    },
+    "2": {
+      "item": "obsidian_gear:enderite_scrap"
+    },
+    "3": {
+      "item": "obsidian_gear:enderite_scrap"
+    },
+    "4": {
+      "item": "minecraft:diamond"
+    },
+    "5": {
+      "item": "minecraft:diamond"
+    },
+    "6": {
+      "item": "minecraft:diamond"
+    },
+    "7": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "obsidian_gear:enderium_ingot",
+    "count": 1
+  }
+}

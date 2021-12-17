@@ -35,6 +35,8 @@ import net.mcreator.obsidiangear.block.KyriteOreBlock;
 import net.mcreator.obsidiangear.block.KyriteBlockBlock;
 import net.mcreator.obsidiangear.block.EnderiumOreBlock;
 import net.mcreator.obsidiangear.block.EnderiumBlockBlock;
+import net.mcreator.obsidiangear.block.EnderiteOreBlock;
+import net.mcreator.obsidiangear.block.EnderiteBlockBlock;
 import net.mcreator.obsidiangear.block.DesolateWoodBlock;
 import net.mcreator.obsidiangear.block.DesolateStairsBlock;
 import net.mcreator.obsidiangear.block.DesolateSlabBlock;
@@ -87,6 +89,8 @@ public class ObsidianGearModBlocks {
 	public static final Block SPOOK_FENCE_GATE = register(new SpookFenceGateBlock());
 	public static final Block SPOOK_PRESSURE_PLATE = register(new SpookPressurePlateBlock());
 	public static final Block SPOOK_BUTTON = register(new SpookButtonBlock());
+	public static final Block ENDERITE_ORE = register(new EnderiteOreBlock());
+	public static final Block ENDERITE_BLOCK = register(new EnderiteBlockBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
