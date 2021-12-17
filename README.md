@@ -33,4 +33,4 @@ In the future I plan on adding more stuff to the installer. If you would like to
 If you do decide to contribute or help, I would like to say thank you :)
 
 ## Credits
-**https://github.com/SniperNation/obsidian-gear-mod/blob/main/docs/CREDITS.md**
+**https://github.com/SniperNation/obsidian-gear-mod/blob/main/docs/CREDITS_AND_SOFTWARE.md**
