@@ -4,10 +4,10 @@ license="MIT License"
 
 [[mods]]
 modId="obsidian_gear"
-version="v1.0.0"
+version="1.0.2"
 displayName="Obsidian Gear"
 credits="Created by SniperNation317 (thesnipercitation#9118 is the discord)"
-displayURL="https://snipernation.github.io/index.html"
+displayURL="https://snipernation.github.io/"
 logoFile="logo.png"
 authors="SniperNation317"
 description='''

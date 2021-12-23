@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
@@ -139,6 +140,9 @@ public class ObsidianGearModItems {
 	public static final Item ENDERITE_ARMOR_BOOTS = register(new EnderiteArmorItem.Boots());
 	public static final Item ENDERITE_SCRAP = register(new EnderiteScrapItem());
 	public static final Item FUSED_COAL = register(new FusedCoalItem());
+	public static final Item VOID_CUBE = register(
+			new SpawnEggItem(ObsidianGearModEntities.VOID_CUBE, -10092391, -10092442, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+					.setRegistryName("void_cube_spawn_egg"));
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
