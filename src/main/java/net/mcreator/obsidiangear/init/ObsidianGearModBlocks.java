@@ -29,12 +29,12 @@ import net.mcreator.obsidiangear.block.SpookLeavesBlock;
 import net.mcreator.obsidiangear.block.SpookFenceGateBlock;
 import net.mcreator.obsidiangear.block.SpookFenceBlock;
 import net.mcreator.obsidiangear.block.SpookButtonBlock;
+import net.mcreator.obsidiangear.block.SkrewtOreBlock;
+import net.mcreator.obsidiangear.block.SkrewtBlockBlock;
 import net.mcreator.obsidiangear.block.RedIronBlock;
 import net.mcreator.obsidiangear.block.PoisonWaterBlock;
 import net.mcreator.obsidiangear.block.KyriteOreBlock;
 import net.mcreator.obsidiangear.block.KyriteBlockBlock;
-import net.mcreator.obsidiangear.block.EnderiumOreBlock;
-import net.mcreator.obsidiangear.block.EnderiumBlockBlock;
 import net.mcreator.obsidiangear.block.EnderiteOreBlock;
 import net.mcreator.obsidiangear.block.EnderiteBlockBlock;
 import net.mcreator.obsidiangear.block.DesolateWoodBlock;
@@ -47,7 +47,6 @@ import net.mcreator.obsidiangear.block.DesolateLeavesBlock;
 import net.mcreator.obsidiangear.block.DesolateFenceGateBlock;
 import net.mcreator.obsidiangear.block.DesolateFenceBlock;
 import net.mcreator.obsidiangear.block.DesolateButtonBlock;
-import net.mcreator.obsidiangear.block.AeonForgeBlockBlock;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -75,10 +74,7 @@ public class ObsidianGearModBlocks {
 	public static final Block DESOLATE_BUTTON = register(new DesolateButtonBlock());
 	public static final Block VOID_GRASS_PLANT = register(new VoidGrassPlantBlock());
 	public static final Block POISON_WATER = register(new PoisonWaterBlock());
-	public static final Block AEON_FORGE_BLOCK = register(new AeonForgeBlockBlock());
 	public static final Block RED_IRON = register(new RedIronBlock());
-	public static final Block ENDERIUM_ORE = register(new EnderiumOreBlock());
-	public static final Block ENDERIUM_BLOCK = register(new EnderiumBlockBlock());
 	public static final Block SPOOK_WOOD = register(new SpookWoodBlock());
 	public static final Block SPOOK_LOG = register(new SpookLogBlock());
 	public static final Block SPOOK_PLANKS = register(new SpookPlanksBlock());
@@ -91,6 +87,8 @@ public class ObsidianGearModBlocks {
 	public static final Block SPOOK_BUTTON = register(new SpookButtonBlock());
 	public static final Block ENDERITE_ORE = register(new EnderiteOreBlock());
 	public static final Block ENDERITE_BLOCK = register(new EnderiteBlockBlock());
+	public static final Block SKREWT_ORE = register(new SkrewtOreBlock());
+	public static final Block SKREWT_BLOCK = register(new SkrewtBlockBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

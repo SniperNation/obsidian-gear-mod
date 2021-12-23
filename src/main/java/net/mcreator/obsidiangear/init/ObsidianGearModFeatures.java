@@ -19,8 +19,8 @@ import net.minecraft.core.Registry;
 import net.mcreator.obsidiangear.world.features.plants.VoidGrassPlantFeature;
 import net.mcreator.obsidiangear.world.features.ores.VoidiumOreFeature;
 import net.mcreator.obsidiangear.world.features.ores.VoidGrassFeature;
+import net.mcreator.obsidiangear.world.features.ores.SkrewtOreFeature;
 import net.mcreator.obsidiangear.world.features.ores.KyriteOreFeature;
-import net.mcreator.obsidiangear.world.features.ores.EnderiumOreFeature;
 import net.mcreator.obsidiangear.world.features.ores.EnderiteOreFeature;
 import net.mcreator.obsidiangear.world.features.ores.DesolateLogFeature;
 import net.mcreator.obsidiangear.world.features.ores.DesolateLeavesFeature;
@@ -48,10 +48,10 @@ public class ObsidianGearModFeatures {
 				VoidGrassPlantFeature.GENERATE_BIOMES, VoidGrassPlantFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(PoisonWaterFeature.FEATURE,
 				new FeatureRegistration(GenerationStep.Decoration.LAKES, PoisonWaterFeature.GENERATE_BIOMES, PoisonWaterFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(EnderiumOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
-				EnderiumOreFeature.GENERATE_BIOMES, EnderiumOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(EnderiteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
 				EnderiteOreFeature.GENERATE_BIOMES, EnderiteOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(SkrewtOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, SkrewtOreFeature.GENERATE_BIOMES,
+				SkrewtOreFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "obsidian_gear:items/skrewt_pickaxe"
+  }
+}

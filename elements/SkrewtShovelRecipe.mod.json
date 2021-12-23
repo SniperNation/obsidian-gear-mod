@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:EnderiteIngot"
+        "value": ""
       },
       {
-        "value": "Blocks.OBSIDIAN"
+        "value": "CUSTOM:Skrewt"
       },
       {
-        "value": "CUSTOM:EnderiteIngot"
+        "value": ""
       },
       {
-        "value": "Blocks.OBSIDIAN"
+        "value": ""
       },
       {
-        "value": "Blocks.CRYING_OBSIDIAN"
+        "value": "Items.STICK"
       },
       {
-        "value": "Blocks.OBSIDIAN"
+        "value": ""
       },
       {
-        "value": "CUSTOM:EnderiteIngot"
+        "value": ""
       },
       {
-        "value": "Blocks.OBSIDIAN"
+        "value": "Items.STICK"
       },
       {
-        "value": "CUSTOM:EnderiumIngot"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:VoidPortalFrame"
+      "value": "CUSTOM:SkrewtShovel"
     },
-    "name": "void_portal",
+    "name": "skrewt_shovel_recipe",
     "namespace": "mod"
   }
 }

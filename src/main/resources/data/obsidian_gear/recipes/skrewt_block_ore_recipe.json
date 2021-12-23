@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "obsidian_gear:skrewt_block"
+    }
+  ],
+  "result": {
+    "item": "obsidian_gear:skrewt",
+    "count": 9
+  }
+}

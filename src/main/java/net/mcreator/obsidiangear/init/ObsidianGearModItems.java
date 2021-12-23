@@ -22,6 +22,13 @@ import net.mcreator.obsidiangear.item.VoidiumHoeItem;
 import net.mcreator.obsidiangear.item.VoidiumAxeItem;
 import net.mcreator.obsidiangear.item.VoidiumArmorItem;
 import net.mcreator.obsidiangear.item.TheVoidItem;
+import net.mcreator.obsidiangear.item.SkrewtSwordItem;
+import net.mcreator.obsidiangear.item.SkrewtShovelItem;
+import net.mcreator.obsidiangear.item.SkrewtPickaxeItem;
+import net.mcreator.obsidiangear.item.SkrewtItem;
+import net.mcreator.obsidiangear.item.SkrewtHoeItem;
+import net.mcreator.obsidiangear.item.SkrewtAxeItem;
+import net.mcreator.obsidiangear.item.SkrewtArmorItem;
 import net.mcreator.obsidiangear.item.PoisonWaterItem;
 import net.mcreator.obsidiangear.item.ObsidianSwordItem;
 import net.mcreator.obsidiangear.item.ObsidianPickaxeItem;
@@ -34,13 +41,6 @@ import net.mcreator.obsidiangear.item.KyriteHoeItem;
 import net.mcreator.obsidiangear.item.KyriteAxeItem;
 import net.mcreator.obsidiangear.item.KyriteArmorItem;
 import net.mcreator.obsidiangear.item.FusedCoalItem;
-import net.mcreator.obsidiangear.item.EnderiumSwordItem;
-import net.mcreator.obsidiangear.item.EnderiumShovelItem;
-import net.mcreator.obsidiangear.item.EnderiumPickaxeItem;
-import net.mcreator.obsidiangear.item.EnderiumIngotItem;
-import net.mcreator.obsidiangear.item.EnderiumHoeItem;
-import net.mcreator.obsidiangear.item.EnderiumAxeItem;
-import net.mcreator.obsidiangear.item.EnderiumArmorItem;
 import net.mcreator.obsidiangear.item.EnderiteSwordItem;
 import net.mcreator.obsidiangear.item.EnderiteShovelItem;
 import net.mcreator.obsidiangear.item.EnderiteScrapItem;
@@ -102,20 +102,7 @@ public class ObsidianGearModItems {
 	public static final Item DESOLATE_BUTTON = register(ObsidianGearModBlocks.DESOLATE_BUTTON, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
 	public static final Item VOID_GRASS_PLANT = register(ObsidianGearModBlocks.VOID_GRASS_PLANT, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item POISON_WATER_BUCKET = register(new PoisonWaterItem());
-	public static final Item AEON_FORGE_BLOCK = register(ObsidianGearModBlocks.AEON_FORGE_BLOCK, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
 	public static final Item RED_IRON = register(ObsidianGearModBlocks.RED_IRON, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
-	public static final Item ENDERIUM_INGOT = register(new EnderiumIngotItem());
-	public static final Item ENDERIUM_ORE = register(ObsidianGearModBlocks.ENDERIUM_ORE, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
-	public static final Item ENDERIUM_BLOCK = register(ObsidianGearModBlocks.ENDERIUM_BLOCK, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
-	public static final Item ENDERIUM_PICKAXE = register(new EnderiumPickaxeItem());
-	public static final Item ENDERIUM_AXE = register(new EnderiumAxeItem());
-	public static final Item ENDERIUM_SWORD = register(new EnderiumSwordItem());
-	public static final Item ENDERIUM_SHOVEL = register(new EnderiumShovelItem());
-	public static final Item ENDERIUM_HOE = register(new EnderiumHoeItem());
-	public static final Item ENDERIUM_ARMOR_HELMET = register(new EnderiumArmorItem.Helmet());
-	public static final Item ENDERIUM_ARMOR_CHESTPLATE = register(new EnderiumArmorItem.Chestplate());
-	public static final Item ENDERIUM_ARMOR_LEGGINGS = register(new EnderiumArmorItem.Leggings());
-	public static final Item ENDERIUM_ARMOR_BOOTS = register(new EnderiumArmorItem.Boots());
 	public static final Item SPOOK_WOOD = register(ObsidianGearModBlocks.SPOOK_WOOD, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
 	public static final Item SPOOK_LOG = register(ObsidianGearModBlocks.SPOOK_LOG, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
 	public static final Item SPOOK_PLANKS = register(ObsidianGearModBlocks.SPOOK_PLANKS, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
@@ -143,6 +130,18 @@ public class ObsidianGearModItems {
 	public static final Item VOID_CUBE = register(
 			new SpawnEggItem(ObsidianGearModEntities.VOID_CUBE, -10092391, -10092442, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
 					.setRegistryName("void_cube_spawn_egg"));
+	public static final Item SKREWT = register(new SkrewtItem());
+	public static final Item SKREWT_ORE = register(ObsidianGearModBlocks.SKREWT_ORE, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
+	public static final Item SKREWT_BLOCK = register(ObsidianGearModBlocks.SKREWT_BLOCK, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
+	public static final Item SKREWT_PICKAXE = register(new SkrewtPickaxeItem());
+	public static final Item SKREWT_AXE = register(new SkrewtAxeItem());
+	public static final Item SKREWT_SWORD = register(new SkrewtSwordItem());
+	public static final Item SKREWT_SHOVEL = register(new SkrewtShovelItem());
+	public static final Item SKREWT_HOE = register(new SkrewtHoeItem());
+	public static final Item SKREWT_ARMOR_HELMET = register(new SkrewtArmorItem.Helmet());
+	public static final Item SKREWT_ARMOR_CHESTPLATE = register(new SkrewtArmorItem.Chestplate());
+	public static final Item SKREWT_ARMOR_LEGGINGS = register(new SkrewtArmorItem.Leggings());
+	public static final Item SKREWT_ARMOR_BOOTS = register(new SkrewtArmorItem.Boots());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

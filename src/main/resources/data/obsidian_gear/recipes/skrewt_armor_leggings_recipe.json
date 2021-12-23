@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "obsidian_gear:skrewt"
+    },
+    "1": {
+      "item": "obsidian_gear:skrewt"
+    },
+    "2": {
+      "item": "obsidian_gear:skrewt"
+    },
+    "3": {
+      "item": "obsidian_gear:skrewt"
+    },
+    "5": {
+      "item": "obsidian_gear:skrewt"
+    },
+    "6": {
+      "item": "obsidian_gear:skrewt"
+    },
+    "8": {
+      "item": "obsidian_gear:skrewt"
+    }
+  },
+  "result": {
+    "item": "obsidian_gear:skrewt_armor_leggings",
+    "count": 1
+  }
+}

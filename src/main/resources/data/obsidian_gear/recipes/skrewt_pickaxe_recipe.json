@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "obsidian_gear:skrewt"
+    },
+    "1": {
+      "item": "obsidian_gear:skrewt"
+    },
+    "2": {
+      "item": "obsidian_gear:skrewt"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "obsidian_gear:skrewt_pickaxe",
+    "count": 1
+  }
+}

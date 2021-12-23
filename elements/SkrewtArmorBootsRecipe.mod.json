@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:EnderiteIngot"
+        "value": ""
       },
       {
-        "value": "Blocks.OBSIDIAN"
+        "value": ""
       },
       {
-        "value": "CUSTOM:EnderiteIngot"
+        "value": ""
       },
       {
-        "value": "Blocks.OBSIDIAN"
+        "value": "CUSTOM:Skrewt"
       },
       {
-        "value": "Blocks.CRYING_OBSIDIAN"
+        "value": ""
       },
       {
-        "value": "Blocks.OBSIDIAN"
+        "value": "CUSTOM:Skrewt"
       },
       {
-        "value": "CUSTOM:EnderiteIngot"
+        "value": "CUSTOM:Skrewt"
       },
       {
-        "value": "Blocks.OBSIDIAN"
+        "value": ""
       },
       {
-        "value": "CUSTOM:EnderiumIngot"
+        "value": "CUSTOM:Skrewt"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:VoidPortalFrame"
+      "value": "CUSTOM:SkrewtArmor.boots"
     },
-    "name": "void_portal",
+    "name": "skrewt_armor_boots_recipe",
     "namespace": "mod"
   }
 }
