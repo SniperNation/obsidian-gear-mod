@@ -8,6 +8,7 @@ build/
 
 # MCreator workspace
 .mcreator/
+obsidian_gear.mcreator
 
 # Minecraft client/server files
 run/
