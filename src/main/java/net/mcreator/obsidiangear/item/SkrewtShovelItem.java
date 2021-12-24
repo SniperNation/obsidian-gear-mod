@@ -30,7 +30,7 @@ public class SkrewtShovelItem extends ShovelItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 70;
+				return 25;
 			}
 
 			public Ingredient getRepairIngredient() {

@@ -22,7 +22,7 @@ public class SkrewtSwordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 35f;
+				return 26f;
 			}
 
 			public int getLevel() {
@@ -30,7 +30,7 @@ public class SkrewtSwordItem extends SwordItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 70;
+				return 25;
 			}
 
 			public Ingredient getRepairIngredient() {

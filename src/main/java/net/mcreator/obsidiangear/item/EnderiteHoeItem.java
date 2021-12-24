@@ -30,7 +30,7 @@ public class EnderiteHoeItem extends HoeItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 70;
+				return 20;
 			}
 
 			public Ingredient getRepairIngredient() {

@@ -30,7 +30,7 @@ public class EnderitePickaxeItem extends PickaxeItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 70;
+				return 20;
 			}
 
 			public Ingredient getRepairIngredient() {

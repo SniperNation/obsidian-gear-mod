@@ -31,7 +31,7 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 
 			@Override
 			public int getEnchantmentValue() {
-				return 45;
+				return 20;
 			}
 
 			@Override
@@ -51,12 +51,12 @@ public abstract class EnderiteArmorItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 0f;
+				return 3.5f;
 			}
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0f;
+				return 0.2f;
 			}
 		}, slot, properties);
 	}

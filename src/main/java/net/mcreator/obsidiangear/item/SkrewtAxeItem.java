@@ -22,7 +22,7 @@ public class SkrewtAxeItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 47f;
+				return 28f;
 			}
 
 			public int getLevel() {
@@ -30,7 +30,7 @@ public class SkrewtAxeItem extends AxeItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 70;
+				return 25;
 			}
 
 			public Ingredient getRepairIngredient() {

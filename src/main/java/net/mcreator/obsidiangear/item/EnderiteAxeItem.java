@@ -22,7 +22,7 @@ public class EnderiteAxeItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 8f;
+				return 21f;
 			}
 
 			public int getLevel() {
@@ -30,7 +30,7 @@ public class EnderiteAxeItem extends AxeItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 70;
+				return 20;
 			}
 
 			public Ingredient getRepairIngredient() {
