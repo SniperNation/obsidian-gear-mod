@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "obsidian_gear:blocks/images",
-    "portal": "obsidian_gear:blocks/images"
+    "particle": "obsidian_gear:blocks/void_portal_block",
+    "portal": "obsidian_gear:blocks/void_portal_block"
   },
   "elements": [
     {

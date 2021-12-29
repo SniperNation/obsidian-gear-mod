@@ -22,8 +22,8 @@ public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
 	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ObsidianGearModFluids.POISON_WATER,
 			() -> ObsidianGearModFluids.FLOWING_POISON_WATER,
 			PoisonWaterFluidAttributes
-					.builder(new ResourceLocation("obsidian_gear:blocks/minecraft-water-animated-gif-3"),
-							new ResourceLocation("obsidian_gear:blocks/minecraft-water-animated-gif-3"))
+					.builder(new ResourceLocation("obsidian_gear:blocks/poison_water_still"),
+							new ResourceLocation("obsidian_gear:blocks/poison_water_moving"))
 
 					.rarity(Rarity.UNCOMMON).sound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.water.ambient")))
 					.color(-13083194)).explosionResistance(100f).canMultiply()

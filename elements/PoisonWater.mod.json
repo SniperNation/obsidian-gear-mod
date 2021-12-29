@@ -4,8 +4,8 @@
   "definition": {
     "name": "Poison Water",
     "bucketName": "Poison Water Bucket",
-    "textureStill": "minecraft-water-animated-gif-3",
-    "textureFlowing": "minecraft-water-animated-gif-3",
+    "textureStill": "poison_water_still",
+    "textureFlowing": "poison_water_moving",
     "tintType": "Water",
     "canMultiply": true,
     "flowRate": 5,

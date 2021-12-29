@@ -45,7 +45,7 @@
       "value": "TOOLS"
     },
     "texture": "void_portal_igniter",
-    "portalTexture": "images",
+    "portalTexture": "void_portal_block",
     "enablePortal": true
   }
 }
