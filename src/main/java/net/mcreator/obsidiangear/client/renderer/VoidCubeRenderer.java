@@ -15,6 +15,6 @@ public class VoidCubeRenderer extends MobRenderer<VoidCubeEntity, SlimeModel<Voi
 
 	@Override
 	public ResourceLocation getTextureLocation(VoidCubeEntity entity) {
-		return new ResourceLocation("obsidian_gear:textures/void-cube-3.png");
+		return new ResourceLocation("obsidian_gear:textures/voidcube4.png");
 	}
 }
