@@ -25,6 +25,7 @@ import net.mcreator.obsidiangear.world.features.ores.EnderiteOreFeature;
 import net.mcreator.obsidiangear.world.features.ores.DesolateLogFeature;
 import net.mcreator.obsidiangear.world.features.ores.DesolateLeavesFeature;
 import net.mcreator.obsidiangear.world.features.lakes.PoisonWaterFeature;
+import net.mcreator.obsidiangear.world.features.WitherStatueFeature;
 
 import java.util.Set;
 import java.util.Map;
@@ -52,6 +53,8 @@ public class ObsidianGearModFeatures {
 				EnderiteOreFeature.GENERATE_BIOMES, EnderiteOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(SkrewtOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, SkrewtOreFeature.GENERATE_BIOMES,
 				SkrewtOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(WitherStatueFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				WitherStatueFeature.GENERATE_BIOMES, WitherStatueFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent
