@@ -19,7 +19,7 @@ jobs:
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          repo_token: "${{ secrets.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 }}"
           prerelease: false
           files: |
             LICENSE.txt
