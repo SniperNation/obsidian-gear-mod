@@ -26,6 +26,7 @@ import net.mcreator.obsidiangear.world.features.ores.DesolateLogFeature;
 import net.mcreator.obsidiangear.world.features.ores.DesolateLeavesFeature;
 import net.mcreator.obsidiangear.world.features.lakes.PoisonWaterFeature;
 import net.mcreator.obsidiangear.world.features.WitherStatueFeature;
+import net.mcreator.obsidiangear.world.features.FortifiedPlainsVillageFeature;
 
 import java.util.Set;
 import java.util.Map;
@@ -55,6 +56,8 @@ public class ObsidianGearModFeatures {
 				SkrewtOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(WitherStatueFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
 				WitherStatueFeature.GENERATE_BIOMES, WitherStatueFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(FortifiedPlainsVillageFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				FortifiedPlainsVillageFeature.GENERATE_BIOMES, FortifiedPlainsVillageFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent
