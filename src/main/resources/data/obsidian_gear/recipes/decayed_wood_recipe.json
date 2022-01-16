@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "obsidian_gear:decayed_log"
+    },
+    "1": {
+      "item": "obsidian_gear:decayed_log"
+    },
+    "2": {
+      "item": "obsidian_gear:decayed_log"
+    },
+    "3": {
+      "item": "obsidian_gear:decayed_log"
+    }
+  },
+  "result": {
+    "item": "obsidian_gear:decayed_wood",
+    "count": 3
+  }
+}

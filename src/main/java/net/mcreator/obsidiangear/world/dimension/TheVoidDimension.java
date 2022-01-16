@@ -46,6 +46,10 @@ public class TheVoidDimension {
 					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
 			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("obsidian_gear:towering_peaks")).getGenerationSettings()
 					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
+			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("obsidian_gear:decayed_forest")).getGenerationSettings()
+					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
+			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("obsidian_gear:decayed_forest")).getGenerationSettings()
+					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
 			event.enqueueWork(() -> {
 				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks)
 						.addAll(replaceableBlocks).build();

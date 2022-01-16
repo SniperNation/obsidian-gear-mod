@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:decayed_log"
+    }
+  ],
+  "result": {
+    "item": "obsidian_gear:decayed_planks",
+    "count": 4
+  }
+}

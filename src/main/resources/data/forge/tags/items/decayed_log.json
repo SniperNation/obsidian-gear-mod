@@ -1,8 +1,7 @@
 {
   "replace": false,
   "values": [
-    "obsidian_gear:desolate_log",
     "obsidian_gear:decayed_log",
-    "obsidian_gear:spook_log"
+    "obsidian_gear:decayed_wood"
   ]
 }

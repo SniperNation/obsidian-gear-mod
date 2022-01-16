@@ -142,6 +142,16 @@ public class ObsidianGearModItems {
 	public static final Item SKREWT_ARMOR_CHESTPLATE = register(new SkrewtArmorItem.Chestplate());
 	public static final Item SKREWT_ARMOR_LEGGINGS = register(new SkrewtArmorItem.Leggings());
 	public static final Item SKREWT_ARMOR_BOOTS = register(new SkrewtArmorItem.Boots());
+	public static final Item DECAYED_WOOD = register(ObsidianGearModBlocks.DECAYED_WOOD, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
+	public static final Item DECAYED_LOG = register(ObsidianGearModBlocks.DECAYED_LOG, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
+	public static final Item DECAYED_PLANKS = register(ObsidianGearModBlocks.DECAYED_PLANKS, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
+	public static final Item DECAYED_LEAVES = register(ObsidianGearModBlocks.DECAYED_LEAVES, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item DECAYED_STAIRS = register(ObsidianGearModBlocks.DECAYED_STAIRS, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
+	public static final Item DECAYED_SLAB = register(ObsidianGearModBlocks.DECAYED_SLAB, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
+	public static final Item DECAYED_FENCE = register(ObsidianGearModBlocks.DECAYED_FENCE, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item DECAYED_FENCE_GATE = register(ObsidianGearModBlocks.DECAYED_FENCE_GATE, CreativeModeTab.TAB_REDSTONE);
+	public static final Item DECAYED_PRESSURE_PLATE = register(ObsidianGearModBlocks.DECAYED_PRESSURE_PLATE, CreativeModeTab.TAB_REDSTONE);
+	public static final Item DECAYED_BUTTON = register(ObsidianGearModBlocks.DECAYED_BUTTON, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

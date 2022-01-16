@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "obsidian_gear:blocks/decayed_planks",
+    "top": "obsidian_gear:blocks/decayed_planks",
+    "side": "obsidian_gear:blocks/decayed_planks"
+  }
+}

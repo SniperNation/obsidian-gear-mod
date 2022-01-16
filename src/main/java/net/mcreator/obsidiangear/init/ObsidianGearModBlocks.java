@@ -47,6 +47,16 @@ import net.mcreator.obsidiangear.block.DesolateLeavesBlock;
 import net.mcreator.obsidiangear.block.DesolateFenceGateBlock;
 import net.mcreator.obsidiangear.block.DesolateFenceBlock;
 import net.mcreator.obsidiangear.block.DesolateButtonBlock;
+import net.mcreator.obsidiangear.block.DecayedWoodBlock;
+import net.mcreator.obsidiangear.block.DecayedStairsBlock;
+import net.mcreator.obsidiangear.block.DecayedSlabBlock;
+import net.mcreator.obsidiangear.block.DecayedPressurePlateBlock;
+import net.mcreator.obsidiangear.block.DecayedPlanksBlock;
+import net.mcreator.obsidiangear.block.DecayedLogBlock;
+import net.mcreator.obsidiangear.block.DecayedLeavesBlock;
+import net.mcreator.obsidiangear.block.DecayedFenceGateBlock;
+import net.mcreator.obsidiangear.block.DecayedFenceBlock;
+import net.mcreator.obsidiangear.block.DecayedButtonBlock;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -89,6 +99,16 @@ public class ObsidianGearModBlocks {
 	public static final Block ENDERITE_BLOCK = register(new EnderiteBlockBlock());
 	public static final Block SKREWT_ORE = register(new SkrewtOreBlock());
 	public static final Block SKREWT_BLOCK = register(new SkrewtBlockBlock());
+	public static final Block DECAYED_WOOD = register(new DecayedWoodBlock());
+	public static final Block DECAYED_LOG = register(new DecayedLogBlock());
+	public static final Block DECAYED_PLANKS = register(new DecayedPlanksBlock());
+	public static final Block DECAYED_LEAVES = register(new DecayedLeavesBlock());
+	public static final Block DECAYED_STAIRS = register(new DecayedStairsBlock());
+	public static final Block DECAYED_SLAB = register(new DecayedSlabBlock());
+	public static final Block DECAYED_FENCE = register(new DecayedFenceBlock());
+	public static final Block DECAYED_FENCE_GATE = register(new DecayedFenceGateBlock());
+	public static final Block DECAYED_PRESSURE_PLATE = register(new DecayedPressurePlateBlock());
+	public static final Block DECAYED_BUTTON = register(new DecayedButtonBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

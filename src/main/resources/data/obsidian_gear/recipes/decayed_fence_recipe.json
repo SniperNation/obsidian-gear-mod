@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "obsidian_gear:decayed_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "obsidian_gear:decayed_planks"
+    },
+    "3": {
+      "item": "obsidian_gear:decayed_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "obsidian_gear:decayed_planks"
+    }
+  },
+  "result": {
+    "item": "obsidian_gear:decayed_fence",
+    "count": 3
+  }
+}

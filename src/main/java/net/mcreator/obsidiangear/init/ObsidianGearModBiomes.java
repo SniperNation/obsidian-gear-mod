@@ -16,6 +16,7 @@ import net.mcreator.obsidiangear.world.biome.VoidWastesBiome;
 import net.mcreator.obsidiangear.world.biome.ToweringPeaksBiome;
 import net.mcreator.obsidiangear.world.biome.SpookForestBiome;
 import net.mcreator.obsidiangear.world.biome.DesolatePlainsBiome;
+import net.mcreator.obsidiangear.world.biome.DecayedForestBiome;
 import net.mcreator.obsidiangear.ObsidianGearMod;
 
 import java.util.List;
@@ -28,6 +29,7 @@ public class ObsidianGearModBiomes {
 	public static Biome DESOLATE_PLAINS = register("desolate_plains", DesolatePlainsBiome.createBiome());
 	public static Biome TOWERING_PEAKS = register("towering_peaks", ToweringPeaksBiome.createBiome());
 	public static Biome SPOOK_FOREST = register("spook_forest", SpookForestBiome.createBiome());
+	public static Biome DECAYED_FOREST = register("decayed_forest", DecayedForestBiome.createBiome());
 
 	private static Biome register(String registryname, Biome biome) {
 		REGISTRY.add(biome.setRegistryName(new ResourceLocation(ObsidianGearMod.MODID, registryname)));
@@ -46,6 +48,7 @@ public class ObsidianGearModBiomes {
 			DesolatePlainsBiome.init();
 			ToweringPeaksBiome.init();
 			SpookForestBiome.init();
+			DecayedForestBiome.init();
 		});
 	}
 }

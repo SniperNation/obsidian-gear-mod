@@ -10,6 +10,9 @@
       },
       {
         "value": "CUSTOM:SpookLog"
+      },
+      {
+        "value": "CUSTOM:DecayedLog"
       }
     ],
     "functions": [],

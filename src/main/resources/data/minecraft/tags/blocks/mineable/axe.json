@@ -6,6 +6,9 @@
     "obsidian_gear:desolate_planks",
     "obsidian_gear:spook_wood",
     "obsidian_gear:spook_log",
-    "obsidian_gear:spook_planks"
+    "obsidian_gear:spook_planks",
+    "obsidian_gear:decayed_wood",
+    "obsidian_gear:decayed_log",
+    "obsidian_gear:decayed_planks"
   ]
 }

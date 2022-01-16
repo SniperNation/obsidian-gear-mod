@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "obsidian_gear:blocks/decayed_planks",
+    "particle": "obsidian_gear:blocks/decayed_planks"
+  }
+}

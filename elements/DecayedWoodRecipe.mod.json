@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 3,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DecayedLog"
+      },
+      {
+        "value": "CUSTOM:DecayedLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DecayedLog"
+      },
+      {
+        "value": "CUSTOM:DecayedLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DecayedWood"
+    },
+    "name": "decayed_wood_recipe",
+    "namespace": "mod"
+  }
+}
