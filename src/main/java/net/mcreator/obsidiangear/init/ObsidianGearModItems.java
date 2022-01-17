@@ -49,6 +49,7 @@ import net.mcreator.obsidiangear.item.EnderiteIngotItem;
 import net.mcreator.obsidiangear.item.EnderiteHoeItem;
 import net.mcreator.obsidiangear.item.EnderiteAxeItem;
 import net.mcreator.obsidiangear.item.EnderiteArmorItem;
+import net.mcreator.obsidiangear.item.AetherianRemenatItem;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -152,6 +153,7 @@ public class ObsidianGearModItems {
 	public static final Item DECAYED_FENCE_GATE = register(ObsidianGearModBlocks.DECAYED_FENCE_GATE, CreativeModeTab.TAB_REDSTONE);
 	public static final Item DECAYED_PRESSURE_PLATE = register(ObsidianGearModBlocks.DECAYED_PRESSURE_PLATE, CreativeModeTab.TAB_REDSTONE);
 	public static final Item DECAYED_BUTTON = register(ObsidianGearModBlocks.DECAYED_BUTTON, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
+	public static final Item AETHERIAN_REMENAT = register(new AetherianRemenatItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
