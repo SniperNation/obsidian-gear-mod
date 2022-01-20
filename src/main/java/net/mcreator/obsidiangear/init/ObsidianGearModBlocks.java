@@ -13,6 +13,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.obsidiangear.block.VoidiumOreBlock;
+import net.mcreator.obsidiangear.block.VoidiumChestBlock;
 import net.mcreator.obsidiangear.block.VoidiumBlockBlock;
 import net.mcreator.obsidiangear.block.VoidStoneBlock;
 import net.mcreator.obsidiangear.block.VoidPortalFrameBlock;
@@ -109,6 +110,7 @@ public class ObsidianGearModBlocks {
 	public static final Block DECAYED_FENCE_GATE = register(new DecayedFenceGateBlock());
 	public static final Block DECAYED_PRESSURE_PLATE = register(new DecayedPressurePlateBlock());
 	public static final Block DECAYED_BUTTON = register(new DecayedButtonBlock());
+	public static final Block VOIDIUM_CHEST = register(new VoidiumChestBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

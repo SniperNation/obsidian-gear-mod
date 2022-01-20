@@ -154,6 +154,7 @@ public class ObsidianGearModItems {
 	public static final Item DECAYED_PRESSURE_PLATE = register(ObsidianGearModBlocks.DECAYED_PRESSURE_PLATE, CreativeModeTab.TAB_REDSTONE);
 	public static final Item DECAYED_BUTTON = register(ObsidianGearModBlocks.DECAYED_BUTTON, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
 	public static final Item AETHERIAN_REMENAT = register(new AetherianRemenatItem());
+	public static final Item VOIDIUM_CHEST = register(ObsidianGearModBlocks.VOIDIUM_CHEST, ObsidianGearModTabs.TAB_OBSIDIAN_GEAR);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
