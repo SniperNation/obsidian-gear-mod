@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "obsidian_gear:eventide"
+    },
+    {
+      "item": "obsidian_gear:upgrade_gem"
+    }
+  ],
+  "result": {
+    "item": "obsidian_gear:reinforced_eventide",
+    "count": 1
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "eventide_greatedge",
+    "customModelName": "Normal",
+    "name": "Eventide",
+    "specialInfo": [
+      "Legendary Greatedge (Unique)",
+      "Materials: Bedrock; Dragonbone",
+      "Enchantments:",
+      "Lifesteal I - Lifesteal grants regeneration to the wielder.",
+      "Gem: None"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 2.5,
+    "enchantability": 15,
+    "damageVsEntity": 15.0,
+    "usageCount": 7810,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "Blocks.BEDROCK"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "EventideLivingEntityIsHitWithTool"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "CUSTOM:Skrewt"
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "CUSTOM:Skrewt"
+      },
+      {
+        "value": "Items.EMERALD"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:UpgradeGem"
+    },
+    "name": "upgrade_gem_1_recipe",
+    "namespace": "mod"
+  }
+}
